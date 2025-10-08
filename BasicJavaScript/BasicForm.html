@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8"> <!--what the hell does this mean bro-->
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script> 
+    <script LANGAUGE="JavaScript"> //specifies the kind of script (JavaScript)//
+    
+        function formValidation(form) { //beginning 
+
+            var FirstName = form.fname.value;
+            var LastName = form.lname.value;
+            var Password = form.password.value;
+            var Email = form.email.value;
+            var Auto = form.cars.value;
+
+            var Firstline = ("Welcome " + FirstName + " " + LastName + "! Your password is " + Password + ", and your email is " + Email + ". Your car is a " + Auto + ".\n\n");
+
+            var Grade = form.grade.value;
+
+            var Vehicles = " ";
+            if (form.vehicle1.checked) {
+                Vehicles = form.vehicle1.value;
+            } else {
+                Vehicles = "No Bike"
+            }
+
+
+            if (form.vehicle2.checked) {
+                Vehicles = Vehicles + " " + form.vehicle2.value;
+            } else {
+                Vehicles = Vehicles + " No Car";
+            }
+
+            var Comment = form.message.value;
+
+            var SecondLine = ("You are in grade " + Grade + " your transportation  is " + Vehicles + " and your comment was: " + Comment);
+
+            alert(Firstline + SecondLine); //makes up 'submit' notif
+        }//end of form validation
+
+        function formCheckChange(form) {
+            //alert("troubleshoot error")
+            if (form.vehicle1.checked) {
+                document.getElementById("freshman").checked = true;
+            } else {
+                document.getElementById("freshman").checked = false;
+            }
+            if (form.vehicle2.checked) {
+                document.getElementById("seniors").checked = true;
+            } else {
+                document.getElementById("seniors").checked = false;
+            }
+
+
+
+        }
+
+    </script>
+
+
+
+
+
+</head>
+
+<body>
+    <div class="formholder">
+
+        <form action="BasicForm.html" method="get">
+
+            <fieldset>
+                <legend>My Form:</legend>
+
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" value="John">
+                <br><br>
+
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value="Doe">
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" value="password2">
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="27sadiemonahan@sau11.org">
+                <br><br>
+
+                <label for="cars">Choose a car:</label>
+                <select id="cars" name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <br><br>
+
+                <input type="radio" id="freshman" name="grade" value="freshman" checked>
+                <label for="freshman">Freshman</label><br>
+
+                <input type="radio" id="sophmore" name="grade" value="sophmore">
+                <label for="sophmore">Sophmore</label><br>
+
+                <input type="radio" id="junior" name="grade" value="junior">
+                <label for="junior">Junior</label><br>
+
+                <input type="radio" id="senior" name="grade" value="senior">
+                <label for="senior">Senior</label><br>
+
+                <br><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" onClick="formCheckChange(this.form)">
+                <label for="vehicle1"> I have a bike</label><br>
+
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" onClick="formCheckChange(this.form)">
+                <label for="vehicle2"> I have a car</label><br>
+
+
+                <br><br>
+                <label for="w3review">Comments:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"> This is my comment! (: </textarea>
+
+                <br><br>
+                <input type="submit" value="SUBMIT" style="margin-left:300px;" onClick="formValidation(this.form)">
+                <br><br>
+                <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+                <button type="reset" value="Reset">Reset</button>
+            </fieldset>
+
+        </form>
+
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br> <!--allows website scrolling space-->
+    </div>
+</body>
+
+</html>

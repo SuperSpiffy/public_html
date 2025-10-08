@@ -1,0 +1,35 @@
+
+
+.table1, .th1, .td1 {
+    width: 300px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.table2, .th2, .td2{
+    width:300px;
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+.th2, .td2{
+    background-color: blanchedalmond;
+}
+
+.table3, .th3, .td3{
+    border: 2px black solid;
+    border-collapse: collapse;
+}
+
+.table4, .th4, .td4{
+    border: 2px black solid;
+    border-collapse: collapse;
+}
+
+.th3, .td3{
+    background-color: lightblue;
+}
+
+
+.th4, .td4{
+    background-color: lightblue;
+}

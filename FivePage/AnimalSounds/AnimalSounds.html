@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Animal Sounds</title>
+    </head>
+
+    <body>
+        <!-- Preloading the animal sounds -->
+
+        <audio id="audiotag1" src="AnimalSfx/bear.wav" preload="auto"></audio>
+        <audio id="audiotag2" src="AnimalSfx/bird.wav" preload="auto"></audio>
+        <audio id="audiotag3" src="AnimalSfx/bison.wav" preload="auto"></audio>
+        <audio id="audiotag4" src="AnimalSfx/cat.wav" preload="auto"></audio>
+        <audio id="audiotag5" src="AnimalSfx/goat.wav" preload="auto"></audio>
+
+        <h1>Animal Sounds</h1>
+
+        <p>Select an animal:</p>
+
+        <select id="animalsounds">
+            <option value="bear">Bear</option>
+            <option value="bird">Bird</option>
+            <option value="bison">Bison</option>
+            <option value="cat">Cat</option>
+            <option value="goat">Goat</option>
+        </select>
+
+        <!-- button that will call the javascript function -->
+        <button type="button" onclick="myFunction()">Submit</button>
+
+        <!-- Paragraph tag will display the animal image -->
+        <p id="demo"></p>
+
+        <!--Javascript Start-->
+
+        <script LANGUAGE="JavaScript"> //assigns everything within script tag as JavaScript
+        
+        function myFunction() {
+            var thesound, text;
+
+            thesound = document.getElementById("animalsounds").value; //Shows photos + plays audios
+
+            if (thesound == "bear") {
+                text = "<img src=images/bear.jpg>";
+                document.getElementById('audiotag1').play();
+            } else if (thesound == "bird") {
+                text = "<img src=images/bird.jpg>";
+                document.getElementById('audiotag2').play();
+            } else if (thesound == "bison") {
+                text = "<img src=images/bison.jpg>";
+                document.getElementById('audiotag3').play();
+            } else if (thesound == "cat") {
+                text = "<img src=images/cat.jpg>";
+                document.getElementById('audiotag4').play();
+            } else if (thesound == "goat") {
+                text = "<img src=images/goat.jpg>";
+                document.getElementById('audiotag5').play();
+            }
+
+            document.getElementById("demo").innerHTML = text;
+        }
+        
+        </script> <!--closes JavaScript, everything below returns to html-->
+
+
+        
+
+    </body>
+
+
+
+</html>

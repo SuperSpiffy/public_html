@@ -1,0 +1,156 @@
+body {
+    background-image: linear-gradient(to bottom, #15204e, #214c6f);
+    width: 1250px;
+    margin: auto;
+}
+
+div.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1250px;
+    background-image: linear-gradient(to right, #216f5e, #216f5e, #214c6f, #214c6f);
+}
+
+header {
+    background-image: url(images4FivePage/TsunamiHeader.jpg);
+    height: 250px;
+    width: 1250px;
+}
+
+header h1 {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 40px;
+    padding-left: 20px;
+    font-size: 60px;
+    font-style: italic;
+    font-family: Times, 'Times New Roman', "serif";
+    color: rgb(236, 255, 236);
+    text-shadow: 1px 1px 5px black;
+    /*push down from the top, over to the left, 2 px shadow*/
+}
+
+header h2 {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 20px;
+    font-size: 36px;
+    font-style: italic;
+    font-family: Times, 'Times New Roman', "serif";
+    color: rgb (236, 255, 236);
+    text-shadow: 1px 1px 5px black;
+    /*push down from the top, over to the left, 2 px shadow*/
+}
+
+nav {
+    height: 35px;
+    width: 760px;
+    background-image: linear-gradient(to right, #216f5e, #214c6f);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-top: 15px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+nav a {
+    padding: 8px 6px 8px 6px;
+    /*top, right, bottom, left*/
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    background-image: url(images4FivePage/BlueFabric.jpg);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px, 1px, 2px, rgb(255, 0, 0);
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+nav a.active,
+nav a:hover {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+    background-image: url(images4FivePage/Toad.png);
+    color: rgb(212, 132, 39);
+    border-radius: 10px;
+}
+
+main {
+    padding: 20px;
+    width: 900px;
+    height: 750px;
+    background-color: blanchedalmond;
+    padding-bottom: 60px;
+    float: left;
+}
+
+img.floatright {
+    background-image: url(images4FivePage/BlueFabric.jpg);
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+
+
+
+footer.footer {
+    width: 1250px;
+    height: 30px;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+
+footer.footerleft {
+    border: 5px solid brown;
+    background-color: brown;
+    width: 565px;
+    float: left;
+}
+
+footer.footerright {
+    padding-left: 100px;
+    border: 5px solid red;
+    background-color: red;
+    width: 565px;
+    float: right;
+    text-align: right;
+}
+
+.sidebar {
+    padding-top: 20px;
+    border: 5px solid #214c6f;
+    width: 300px;
+    height: 800px;
+    float: right;
+    color: white;
+    background-image: linear-gradient(to bottom, #214c6f, #216f5e);
+    text-align: left;
+}
+
+
+
+
+
+/********** TABLE ************/
+
+
+main .table1,
+main .table1 .th1,
+main .table1 .td1 {
+    width: 600px;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+main .tableHead {
+    width: 600px;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+}

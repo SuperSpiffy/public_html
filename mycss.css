@@ -1,0 +1,91 @@
+/*We'll figure it out. blargh.*/
+
+/**************** main Page ****************/
+.mainColor {
+    background-color: rgb(212, 187, 194);
+}
+
+
+
+
+/*************** Red Page(Red things) *************/
+.red {
+    background-color: red;
+}
+
+.red-background {
+    background-image: url(images/Tod.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/************* Blue Page *************/
+.blue {
+    background-color: blue;
+}
+
+.blue-background {
+    background-image: url(images/blueRoses.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 40%;
+}
+
+/*********** Green Page *********/
+.green {
+    background-color: green;
+}
+
+.green-background{
+    background-image: url(images/greenWaveish.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%
+}
+/*************** Anything else ig *************/
+.rgbAlign {
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+
+/*Colors for rgb Links*/
+
+.red-link {
+    color:lightcoral
+}
+
+.blue-link{
+    color:rgb(145, 201, 201);
+}
+
+.green-link{
+    color:lightgreen
+}
+
+.main-link{
+    color:whitesmoke
+}
+
+
+
+/*************** Colors for Paraghraphs ***************/
+.red-text {
+    color:rgb(99, 9, 9)
+}
+
+.blue-text{
+    color:rgb(145, 176, 201);
+}
+
+.green-text{
+    color:rgb(3, 46, 3)
+}
