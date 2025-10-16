@@ -168,3 +168,45 @@ main .table1 .bl3 {
     border: 2px black solid;
     border-collapse: collapse;
 }
+
+.bl1{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.bl2{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.bl3{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.bl4{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.Flex{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.hidden{
+    color:aquamarine; 
+}
+
+.ThirdGreen{
+    border: 2px solid black;
+    border-collapse:collapse;
+}
+
+.imgFloatRight{
+    float: right;
+}
+
+.babyBald{
+    float: right;
+}
