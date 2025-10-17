@@ -8,7 +8,7 @@ div.container {
     margin-left: auto;
     margin-right: auto;
     width: 1250px;
-    background-image: linear-gradient(to right, #216f5e, #216f5e, #214c6f, #214c6f);
+    background-image: linear-gradient(to right, #da3c0c, #da3c0c, #214c6f, #214c6f);
 }
 
 header {
@@ -45,7 +45,7 @@ header h2 {
 nav {
     height: 35px;
     width: 760px;
-    background-image: linear-gradient(to right, #216f5e, #214c6f);
+    background-image: linear-gradient(to right, #da3c0c, #214c6f);
     margin-left: auto;
     margin-right: auto;
     padding-left: 50px;
@@ -54,7 +54,22 @@ nav {
     font-weight: bold;
 }
 
-nav a {
+
+nav a.active,
+nav a:hover {
+    padding: 8px 6px 8px 6px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+    background-image: url(images4FivePage/activeButton.jpg);
+    color: rgb(231, 131, 16);
+    border-radius: 10px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+nav a.button {
     padding: 8px 6px 8px 6px;
     /*top, right, bottom, left*/
     border-top: 1px solid white;
@@ -63,28 +78,18 @@ nav a {
     border-left: 1px solid black;
     background-image: url(images4FivePage/BlueFabric.jpg);
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px, 1px, 2px, rgb(255, 0, 0);
+    color: rgb(241, 91, 4);
     margin-right: 15px;
     border-radius: 10px;
 }
 
-nav a.active,
-nav a:hover {
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    border-left: 1px solid rgb(255, 255, 255);
-    background-image: url(images4FivePage/Toad.png);
-    color: rgb(212, 132, 39);
-    border-radius: 10px;
-}
+
 
 main {
     padding: 20px;
     width: 900px;
-    height: 750px;
-    background-color: blanchedalmond;
+    height: 900px;
+    background-color: rgb(235, 218, 193);
     padding-bottom: 60px;
     float: left;
 }
@@ -100,113 +105,125 @@ img.floatright {
 
 footer.footer {
     width: 1250px;
-    height: 30px;
+    height: 50px;
     padding-right: 25px;
     padding-top: 10px;
 }
 
 footer.footerleft {
-    border: 5px solid brown;
-    background-color: brown;
+    border: 5px solid #214c6f;
     width: 565px;
+    height: 45px;
     float: left;
 }
 
 footer.footerright {
     padding-left: 100px;
-    background-image: url(images4FivePage/BlueFabric.jpg);
+    background-image: linear-gradient(to right, #214c6f, #214c6f, #eb5a06, #eb5a06, #eb5a06);
     width: 565px;
+    height: 45px;
     float: right;
     text-align: right;
 }
 
 .sidebar {
     padding-top: 20px;
-    border: 5px solid #214c6f;
-    width: 300px;
-    height: 800px;
+    width: 310px;
+    height: 960px;
     float: right;
     color: white;
-    background-image: linear-gradient(to bottom, #214c6f, #216f5e);
+    background-image: linear-gradient(to bottom, #214c6f, #eb5a06);
     text-align: left;
 }
 
+.imgFloatRight {
+    float: right;
+}
+
+.babyBald {
+    float: right;
+}
 
 
+/********** TABLE 4 ABOUT ************/
 
 
-/********** TABLE ************/
-
-
-main .table1,
-main .table1 .th1,
-main .table1 .td1 {
-    width: 600px;
+main .tableHead {
+    width: 800px;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid;
     border-collapse: collapse;
 }
 
-main .tableHead {
-    width: 600px;
+/* Start, End, G, W, Line*/
+main .table1,
+main .table1 .th1,
+main .table1 .td1 {
+    width: 800px;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid (235, 218, 193);
     border-collapse: collapse;
 }
 
 main .table1 .blockThree,
 main .table1 .bl3 {
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid rgb(235, 218, 193);
     border-collapse: collapse;
     width: 600px;
     height: 100px;
+    background-color: aqua;
 }
 
-.blockThree, .greenThird {
+.bucket {
+    background-color: #15204e;
+}
 
+.bucket .ThirdGreen {
+    background-color: #15204e;
     border: 2px black solid;
     border-collapse: collapse;
+
 }
 
-.bl1{
-    border: 2px solid black;
+/*Block 1*/
+.bl1 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 2px solid rgb(235, 218, 193);
+    background-image: linear-gradient(to bottom, #214c6f);
     border-collapse: collapse;
 }
 
-.bl2{
-    border: 2px solid black;
+.bl2 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 2px solid rgb(235, 218, 193);
     border-collapse: collapse;
 }
 
-.bl3{
-    border: 2px solid black;
+.bl3 {
+    border: 2px solid rgb(235, 218, 193);
     border-collapse: collapse;
 }
 
-.bl4{
-    border: 2px solid black;
+.bl4 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 2px solid rgb(235, 218, 193);
     border-collapse: collapse;
 }
 
-.Flex{
-    border: 2px solid black;
+.Flex {
+    border: 2px solid rgb(235, 218, 193);
     border-collapse: collapse;
 }
 
-.hidden{
-    color:aquamarine; 
+.hidden {
+    color: aquamarine;
 }
 
-.ThirdGreen{
+.ThirdGreen {
     border: 2px solid black;
-    border-collapse:collapse;
-}
-
-.imgFloatRight{
-    float: right;
-}
-
-.babyBald{
-    float: right;
+    border-collapse: collapse;
 }
