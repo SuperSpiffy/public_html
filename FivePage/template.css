@@ -2,6 +2,9 @@ body {
     background-image: linear-gradient(to bottom, #15204e, #214c6f);
     width: 1250px;
     margin: auto;
+    /*
+    background-image: url(images4FivePage/FivePagerBackground.jpeg) style="width=1250";
+    background-repeat: no-repeat;*/
 }
 
 div.container {
@@ -83,25 +86,22 @@ nav a.button {
     border-radius: 10px;
 }
 
-
-
 main {
     padding: 20px;
     width: 900px;
     height: 900px;
-    background-color: rgb(235, 218, 193);
+    background-color: rgb(100, 113, 133);
     padding-bottom: 60px;
     float: left;
 }
 
+/*
 img.floatright {
     background-image: url(images4FivePage/BlueFabric.jpg);
     float: right;
     margin-left: 10px;
     margin-bottom: 10px
-}
-
-
+}*/
 
 footer.footer {
     width: 1250px;
@@ -145,13 +145,33 @@ footer.footerright {
 }
 
 
+/**** ABOUT PAGE ****/
+
+.AboutSidebar{
+    float:right;
+}
+
+/************* IMAGE FADE CODE ***************/
+
+.imageScaler{
+    width: 250px;
+    height: 250px;
+}
+
 /********** TABLE 4 ABOUT ************/
 
 
-main .tableHead {
+div.tableMain{
+    background-image: linear-gradient(to bottom, #216f68, #eb8006, #e96f4a);
+    width: 800px;
+}
+
+
+
+main .TopHeader {
     width: 800px;
     text-align: center;
-    border: 2px solid;
+    border: 2px solid color=none;
     border-collapse: collapse;
 }
 
@@ -170,32 +190,31 @@ main .table1 .bl3 {
     text-align: center;
     border: 2px solid rgb(235, 218, 193);
     border-collapse: collapse;
-    width: 600px;
-    height: 100px;
-    background-color: aqua;
+    width: 800px;
 }
-
+/*
 .bucket {
-    background-color: #15204e;
+    background-color: rgb(201, 91, 18);
 }
+*/
 
 .bucket .ThirdGreen {
-    background-color: #15204e;
-    border: 2px black solid;
+    border: 2px rgb(2, 0, 2) solid;
     border-collapse: collapse;
 
 }
 
 /*Block 1*/
 .bl1 {
+    width: 800px;
     padding-bottom: 10px;
     padding-top: 10px;
     border: 2px solid rgb(235, 218, 193);
-    background-image: linear-gradient(to bottom, #214c6f);
     border-collapse: collapse;
 }
 
 .bl2 {
+    width: 800px;
     padding-bottom: 10px;
     padding-top: 10px;
     border: 2px solid rgb(235, 218, 193);
@@ -203,11 +222,13 @@ main .table1 .bl3 {
 }
 
 .bl3 {
+    width: 800px;
     border: 2px solid rgb(235, 218, 193);
     border-collapse: collapse;
 }
 
 .bl4 {
+    width: 800px;
     padding-bottom: 10px;
     padding-top: 10px;
     border: 2px solid rgb(235, 218, 193);
@@ -215,12 +236,13 @@ main .table1 .bl3 {
 }
 
 .Flex {
+    width: 800px;
     border: 2px solid rgb(235, 218, 193);
     border-collapse: collapse;
 }
 
 .hidden {
-    color: aquamarine;
+    opacity: 0;
 }
 
 .ThirdGreen {
