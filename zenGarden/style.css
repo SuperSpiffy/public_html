@@ -1,58 +1,36 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-
-
-/* Not all elements are defined in this file, so you'll most likely want to refer to the index.html as well. */
-
-/************************************************** 
-Student Name:
-Date of Project:
-
-Start Mr. Reynolds' Directions:
-Make sure you list your color palette colors in the comment below.
-
-You do not have to comment the HTML, but every block of CSS on this page needs to commented even stuff that is already here that you don't use.  If you don't need it and don't want to comment it delete it. But if it is here is needs to be commented.  
-
-Formatting, make sure all your CSS is uniformly indented
-throughout the entire style sheet.  
-
-You need to set fonts and I will search for that, you need more than one image.
-
-You need some kind of special effect, JavaScript or CSS Animation.
-Make sure you incorporate C.R.A.P into your design. 
-***************************************************/
-
-/*  My Primary color for my palette is: ??????????, my secondary colors are:  */
-
-/*every CSS block needs a comment, if you don't need it delete it*/
-/*all HTML tags are by default position: relative*/
-/*their position is relative to the other tags around them*/
-/*I am placing this default command in every block so the IDE does not highlight the command for being empty*/
-/*Delete this command from the blocks when you put your own commands in*/
 html {
     position: relative;
 }
 
 /*text body*/
 body {
-    color: #ff00d4;
+    font-family: "monospace";
+    color: #bacae0;
     position: relative;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
-/*will style all your a tags*/
-a:link {
-    color: #B7A5DF;
+.backgroundColor {
+    background-image: linear-gradient(to bottom, #1f0b24);
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
+
+a:link {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #e9c2ff;
+}
+
+a:visited {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #e9c2ff;
+}
+
 /*will control what happens on a hover of a tags*/
 a:hover {
-    color: blue;
-    position: relative;
+    color: rgb(146, 94, 196);
+    text-shadow: 2px 2px 5px #4a038d;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
+
 /*something like this control what to a tags only in the .sidebar*/
 .sidebar a:link {
     border: red 2px solid;
@@ -66,48 +44,187 @@ abbr {
     position: relative;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
+
 /*surrounds entire site except exta divs*/
 .page-wrapper {
     margin: auto;
-    background-color: #B7A5DF;
-    width: 1250px;
+    background-color: #3b2747;
+    width: 900px;
+    height: 3000px;
     position: relative;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
-/*surrounds header, .summary, .preamble*/
-section.intro {
+
+
+
+/*First paragraph*/
+.summary {
+    border-bottom: #f2ad73 10px solid;
+    border-left: #ffa345 20px solid;
+    border-top: #ffa345 20px solid;
+
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 90px;
+    background-color: #1f0b24;
+    width: 400px;
+    left: 450px;
+    margin: 20px;
+}
+
+
+.preamble {
+    border-bottom: #f2ad73 10px solid;
+    border-top: #ffa345 20px solid;
+    border-right: #ffa345 10px solid;
+    border-left: #f2ad73 10px solid;
+
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 90px;
+    background-color: #1f0b24;
+    width: 400px;
+    top: -15px;
+    left: -10px;
+    margin: 20px;
+}
+
+div.explanation {
+    border-bottom: #f2ad73 10px solid;
+    border-left: #ffa345 20px solid;
+    border-top: #ee8700 20px solid;
+    border-right: #ffa345 20px solid;
+
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 90px;
+    background-color: #1f0b24;
+    height: 860px;
+    width: 200px;
+    top: 300px;
+    left: 540px;
+    margin: 20px;
+}
+
+.participation {
+    border-bottom: #f2ad73 10px solid;
+    border-right: #ffa345 20px solid;
+    border-top: #ffa345 20px solid;
+
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 90px;
+    padding-right: 0px;
+    background-color: #1f0b24;
+    border-width: 20px;
+    width: 500px;
+    top: 100px;
+    left: -100px;
+    margin: 0px;
+}
+
+.benefits {
+    border-bottom: #1f0b24 10px solid;
+    border-right: #ffa345 20px solid;
+    border-top: #ffa345 20px solid;
+
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 90px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: #1f0b24;
+    border-width: 20px;
+    width: 500px;
+    top: 110px;
+    left: 100px;
+    margin: 0px;
+}
+
+.requirements {
+    border-right: #ffa345 20px solid;
+    border-bottom: #1f0b24 15px solid;
+
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: #1f0b24;
+    border-width: 20px;
+    width: 700px;
+    top: 110px;
+    left: 100px;
+}
+
+.bottomLinks {
+    border-right: #ffa345 20px solid;
+    border-top: #ee8700 20px solid;
+
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: #1f0b24;
+    border-width: 20px;
+    width: 300px;
+    top: 2500px;
+    right: 100px;
+}
+
+
+
+
+
+main supporting/ section.intro {
     border: blue 2px solid;
     position: relative;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
+
 header {
-    border: yellow 2px solid;
     position: relative;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
+/*Top Header*/
 header h1 {
-    border: orange 2px solid;
+    border-top: #ffa345 20px solid;
+    border-right: #ffa345 10px solid;
+    border-left: #f2ad73 10px solid;
+    width: 400px;
+    height: 100px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #e9c2ff;
+    font-size: xx-large;
+    background-color: #1f0b24;
+    margin: auto;
+    text-align: center;
     position: relative;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
+/*The Beauty of CSS Design*/
 header h2 {
-    border: orangered 2px solid;
-    position: relative;
+    border-top: #ffa345 10px solid;
+    border-right: #f3742b 10px solid;
+    position: absolute;
+    background: #1f0b24;
+    height: 60px;
+    width: 400px;
+    left: -50px;
+    top: 100px;
+    float: left;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
+
 /*surrounds .explanation .participation .benefits .requirements footer*/
 div.main {
     border: purple 2px solid;
     position: relative;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
 /*These are all your major sub-elements, you can give a whole group of classes commands by grouping them separated by , */
 /*You can get more specific by styling the <p> tags or the <h3> tags or a specific <p> tag with a command like*/
 /*suppary p would style every <p> inside of summary */
@@ -122,7 +239,7 @@ footer {
     position: relative;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
+
 /*There are 6 extras at the very bottom of the page*/
 .extra1 {
     /*code below will place element at top of page*/
@@ -134,5 +251,122 @@ footer {
   */
     position: relative;
 }
+
+
+/** The background bricks, hides borders that go out of bounds**/
+
+.brickOne {
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    background-color: #1f0b24;
+    border-width: 10px;
+    height: 20px;
+    width: 30px;
+    left: -70px;
+    top: 66px;
+}
+
+/*top half of "A demonstration...*/
+.brickTwo {
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+
+    background-color: #1f0b24;
+    border-width: 10px;
+    height: 20px;
+    width: 30px;
+    left: 900px;
+    top: 90px;
+}
+
+/*bottom half of "A demonstration...*/
+.brickThree {
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+
+    background-color: #1f0b24;
+    border-width: 10px;
+    height: 20px;
+    width: 30px;
+    left: 910px;
+    top: 290px;
+}
+
+/*Top Participation...*/
+.brickFour {
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 35px;
+    padding-right: 45px;
+    padding-bottom: 150px;
+
+    background-color: #1f0b24;
+    border-width: 10px;
+    height: 20px;
+    width: 30px;
+    left: -110px;
+    top: 800px;
+}
+
+/*Bottom Participation...*/
+.brickFive {
+    position: absolute;
+    padding-top: 5px;
+    padding-left: 35px;
+    padding-right: 45px;
+    padding-bottom: 20px;
+
+    background-color: #1f0b24;
+    border-width: 10px;
+    height: 20px;
+    width: 30px;
+    left: -110px;
+    top: 1460px;
+}
+
+.brickSix {
+    position: absolute;
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-right: 30px;
+    padding-bottom: 200px;
+
+    background-color: #1f0b24;
+    border-width: 10px;
+    height: 20px;
+    width: 30px;
+    left: 750px;
+    top: 2985px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 style.css External Displaying style.css.
