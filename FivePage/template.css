@@ -1,14 +1,17 @@
 body {
-    background-image: linear-gradient(to bottom, #15204e, #214c6f);
+    background-image: linear-gradient(to bottom, #3b1d6b, #214c6f, #214c6f);
     width: 1250px;
     margin: auto;
+    /*
+    background-image: url(images4FivePage/FivePagerBackground.jpeg) style="width=1250";
+    background-repeat: no-repeat;*/
 }
 
 div.container {
     margin-left: auto;
     margin-right: auto;
     width: 1250px;
-    background-image: linear-gradient(to right, #da3c0c, #da3c0c, #214c6f, #214c6f);
+    background-image: linear-gradient(to right, #a1391a, #a1391a, #214c6f, #214c6f);
 }
 
 header {
@@ -45,7 +48,7 @@ header h2 {
 nav {
     height: 35px;
     width: 760px;
-    background-image: linear-gradient(to right, #da3c0c, #214c6f);
+    background-image: linear-gradient(to right, #a1391a, #214c6f);
     margin-left: auto;
     margin-right: auto;
     padding-left: 50px;
@@ -54,6 +57,10 @@ nav {
     font-weight: bold;
 }
 
+input:focus {
+    background-color: rgb(116, 75, 139);
+    color: rgb(255, 249, 241)
+}
 
 nav a.active,
 nav a:hover {
@@ -63,7 +70,7 @@ nav a:hover {
     border-bottom: 1px solid rgb(255, 255, 255);
     border-left: 1px solid rgb(255, 255, 255);
     background-image: url(images4FivePage/activeButton.jpg);
-    color: rgb(231, 131, 16);
+    color: rgb(218, 4, 4);
     border-radius: 10px;
     margin-right: 15px;
     border-radius: 10px;
@@ -83,25 +90,28 @@ nav a.button {
     border-radius: 10px;
 }
 
-
-
 main {
-    padding: 20px;
-    width: 900px;
-    height: 900px;
-    background-color: rgb(235, 218, 193);
+    padding: 15px;
+    width: 910px;
+    height: 910px;
     padding-bottom: 60px;
+    background-image: linear-gradient(to bottom, #a1391a, antiquewhite);
     float: left;
 }
 
+/*
 img.floatright {
     background-image: url(images4FivePage/BlueFabric.jpg);
     float: right;
     margin-left: 10px;
     margin-bottom: 10px
+}*/
+
+.sidebarImage img {
+    width: 310px;
+    height: 965px;
+    opacity: 35%;
 }
-
-
 
 footer.footer {
     width: 1250px;
@@ -111,16 +121,18 @@ footer.footer {
 }
 
 footer.footerleft {
-    border: 5px solid #214c6f;
-    width: 565px;
+    color: antiquewhite;
+    background-image: linear-gradient(to right, #a1391a, #a1391a, #214c6f);
+    width: 575px;
     height: 45px;
     float: left;
 }
 
 footer.footerright {
+    color: antiquewhite;
     padding-left: 100px;
-    background-image: linear-gradient(to right, #214c6f, #214c6f, #eb5a06, #eb5a06, #eb5a06);
-    width: 565px;
+    background-image: linear-gradient(to left, #214c6f, #214c6f, #214c6f);
+    width: 575px;
     height: 45px;
     float: right;
     text-align: right;
@@ -129,10 +141,10 @@ footer.footerright {
 .sidebar {
     padding-top: 20px;
     width: 310px;
-    height: 960px;
+    height: 965px;
     float: right;
     color: white;
-    background-image: linear-gradient(to bottom, #214c6f, #eb5a06);
+    background-image: linear-gradient(to bottom, #214c6f, #a1391a);
     text-align: left;
 }
 
@@ -140,18 +152,41 @@ footer.footerright {
     float: right;
 }
 
-.babyBald {
+.ilmg img {
+    opacity: 65%;
+    padding-top: 40px;
+    padding-left: 30px;
+    float: right;
+    width: 300px;
+    height: 230px;
+}
+
+
+/**** ABOUT PAGE ****/
+
+.AboutSidebar {
     float: right;
 }
 
+/************* IMAGE FADE CODE ***************/
+
+.imageScaler {
+    width: 250px;
+    height: 250px;
+}
 
 /********** TABLE 4 ABOUT ************/
 
 
-main .tableHead {
+div.tableMain {
+    background-image: linear-gradient(to bottom, #216f68, #eb8006, #e96f4a);
+    width: 800px;
+}
+
+main .TopHeader {
     width: 800px;
     text-align: center;
-    border: 2px solid;
+    border: 2px solid color=none;
     border-collapse: collapse;
 }
 
@@ -170,32 +205,27 @@ main .table1 .bl3 {
     text-align: center;
     border: 2px solid rgb(235, 218, 193);
     border-collapse: collapse;
-    width: 600px;
-    height: 100px;
-    background-color: aqua;
-}
-
-.bucket {
-    background-color: #15204e;
+    width: 800px;
 }
 
 .bucket .ThirdGreen {
-    background-color: #15204e;
-    border: 2px black solid;
+    border: 2px rgb(2, 0, 2) solid;
     border-collapse: collapse;
+    background-image: linear-gradient(to top, #5a9c97, #eb8006, #eb8006, #e96f4a);
 
 }
 
 /*Block 1*/
 .bl1 {
+    width: 800px;
     padding-bottom: 10px;
     padding-top: 10px;
     border: 2px solid rgb(235, 218, 193);
-    background-image: linear-gradient(to bottom, #214c6f);
     border-collapse: collapse;
 }
 
 .bl2 {
+    width: 800px;
     padding-bottom: 10px;
     padding-top: 10px;
     border: 2px solid rgb(235, 218, 193);
@@ -203,11 +233,13 @@ main .table1 .bl3 {
 }
 
 .bl3 {
+    width: 800px;
     border: 2px solid rgb(235, 218, 193);
     border-collapse: collapse;
 }
 
 .bl4 {
+    width: 800px;
     padding-bottom: 10px;
     padding-top: 10px;
     border: 2px solid rgb(235, 218, 193);
@@ -215,15 +247,30 @@ main .table1 .bl3 {
 }
 
 .Flex {
+    width: 800px;
     border: 2px solid rgb(235, 218, 193);
     border-collapse: collapse;
 }
 
 .hidden {
-    color: aquamarine;
+    opacity: 0;
 }
 
 .ThirdGreen {
     border: 2px solid black;
     border-collapse: collapse;
+}
+
+/******** LIKE PAGE **********/
+
+.rollover2 {
+    width: 350;
+    height: 350;
+    float: right;
+}
+
+/*** CONTACT PAGE ***/
+
+.contactColor {
+    background-color: #f0ab51;
 }

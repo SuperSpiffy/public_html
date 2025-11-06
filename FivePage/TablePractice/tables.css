@@ -1,6 +1,5 @@
 
-
-.table1, .th1, .td1 {
+.tablep1, .thp1, .tdp1 {
     width: 300px;
     border: 2px solid black;
     border-collapse: collapse;
@@ -33,3 +32,90 @@
 .th4, .td4{
     background-color: lightblue;
 }
+
+/******************************************************************/
+
+
+div.tableMain {
+    background-image: linear-gradient(to bottom, #216f68, #eb8006, #e96f4a);
+    width: 800px;
+}
+
+main .TopHeader {
+    width: 800px;
+    text-align: center;
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+/* Start, End, G, W, Line*/
+main .table1,
+main .table1 .th1,
+main .table1 .td1 {
+    width: 800px;
+    text-align: center;
+    border: 2px solid (235, 218, 193);
+    border-collapse: collapse;
+}
+
+main .table1 .blockThree,
+main .table1 .bl3 {
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    width: 800px;
+}
+
+.bucket .ThirdGreen {
+    border: 2px rgb(255, 255, 255) solid;
+    border-collapse: collapse;
+    background-image: linear-gradient(to top, #5a9c97, #eb8006, #eb8006, #e96f4a);
+
+}
+
+/*Block 1*/
+.bl1 {
+    width: 800px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+
+.bl2 {
+    width: 800px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+
+.bl3 {
+    width: 800px;
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+
+.bl4 {
+    width: 800px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+.Flex {
+    width: 800px;
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.ThirdGreen {
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+

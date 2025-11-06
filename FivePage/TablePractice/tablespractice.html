@@ -3,32 +3,28 @@
 <html>
 <link rel="stylesheet" href="tables.css">
 
-<head>
-    <style>
-        
-    </style>
-</head>
 
 <h1> Tables Practice </h1>
 
 
 <body>
-        <table class="table1">
+    <main>
+        <table class="tablep1">
             <tr>
-                <th class="th1"> See No Evil </th>
-                <th class="th1"> Hear No Evil </th>
-                <th class="th1"> Speak No Evil </th>
+                <th class="thp1"> See No Evil </th>
+                <th class="thp1"> Hear No Evil </th>
+                <th class="thp1"> Speak No Evil </th>
             </tr>
 
             <tr>
-                <td class="td1"> Me </td>
-                <td class="td1"> Myself </td>
-                <td class="td1"> and I </td>
+                <td class="tdp1"> Me </td>
+                <td class="tdp1"> Myself </td>
+                <td class="tdp1"> and I </td>
 
             </tr>
         </table>
 
-    <br>
+        <br>
 
         <table class="table2">
             <tr>
@@ -46,16 +42,16 @@
 
 
 
-    <br>
+        <br>
 
-    <table class="table3">
-        <tr> <!--overarching table OPEN-->
-            <th class="th3"> Filler</th>
-            <th class="th3">Table in Table</th>
-        <tr>
-            <td class="td3">Filler</td>
-            <td class="td3">Table in Table</td>
-        </tr>
+        <table class="table3">
+            <tr> <!--overarching table OPEN-->
+                <th class="th3"> Filler</th>
+                <th class="th3">Table in Table</th>
+            <tr>
+                <td class="td3">Filler</td>
+                <td class="td3">Table in Table</td>
+            </tr>
 
             <tr> <!--for the table inside the table opening-->
                 <table class="table4">
@@ -68,18 +64,129 @@
                         <td class="td4">Table in Table2</td>
                     </tr>
                 </table>
-    
+
             </tr> <!--table inside the table closes-->
-        </tr> <!--overarching table CLOSE-->
-    </table>
+            </tr> <!--overarching table CLOSE-->
+        </table>
+
+        <!--------------------------------------------------------------------->
+
+        <br>
+
+
+        <div class="tableMain">
+
+            <table>
+                <tr>
+                    <th class="TopHeader">2025-26 Green/White Schedule</th>
+                <tr>
+            </table>
+
+            <table class="table1">
+
+                <!--Top Table Row-->
+                <th class="hidden"> ......... </th>
+                <th class="th1"> Start </th>
+                <th class="th1"> End </th>
+                <th class="th1"> Green Day </th>
+                <th class="th1"> White Day </th>
+
+                <!--Block 1 Gr/Wh Days-->
+                <tr>
+                    <td class="bl1">Block 1</td>
+                    <td class="bl1">7:40</td>
+                    <td class="bl1">9:00</td>
+                    <td class="bl1">Honors Chem</td>
+                    <td class="bl1">CP Algebra II</td>
+                </tr>
+
+                <!--Block 2 Gr/Wh Days-->
+                <tr>
+                    <td class="bl2">Block 2</td>
+                    <td class="bl2">9:05</td>
+                    <td class="bl2">10:25</td>
+                    <td class="bl2">Programming II</td>
+                    <td class="bl2">Programming II</td>
+                </tr>
+
+                <!--Flex Gr/Wh Days-->
+                <tr>
+                    <td class="Flex">Flex-Advisory</td>
+                    <td class="Flex">10:30</td>
+                    <td class="Flex">11:00</td>
+                    <td class="Flex">Flex</td>
+                    <td class="Flex">Flex</td>
+                </tr>
+
+                <!--Block 3 Gr/Wh Days + Lunch-->
+
+                <tr>
+                    <td class="bl3">Block 3</td>
+                    <td class="bl3">11:05</td>
+                    <td class="bl3">1:00</td>
+                    <td class="bucket">
+
+                        <table style="margin: auto">
+
+                            <tr>
+                                <td class="ThirdGreen">Study Hall</td>
+                            </tr>
+
+                            <tr>
+                                <td class="ThirdGreen">B Lunch</td>
+                            </tr>
+
+                            <tr>
+                                <td class="ThirdGreen">Study Hall</td>
+                            </tr>
+
+                            <tr>
+                                <td class="ThirdGreen">Study Hall</td>
+                            </tr>
+
+                        </table>
+
+                    </td>
+
+                    <td class="bucket">
+
+                        <table style="margin:auto">
+
+                            <tr>
+                                <td class="ThirdGreen">French III</td>
+                            </tr>
+
+                            <tr>
+                                <td class="ThirdGreen">C Lunch</td>
+                            </tr>
+
+                            <tr>
+                                <td class="ThirdGreen">French III</td>
+                            </tr>
+
+                            <tr>
+                                <td class="ThirdGreen">French III</td>
+                            </tr>
+                        </table>
+                    </td>
+
+                <tr>
+                    <td class="bl4">Block 4</td>
+                    <td class="bl4">1:05</td>
+                    <td class="bl4">2:30</td>
+                    <td class="bl4">AP Lang</td>
+                    <td class="bl4">AP Lang</td>
+                </tr>
+
+            </table> <!--Closes table 1-->
+        </div> <!--Closes table main-->
 
 
 
 
 
 
-
-
+    </main>
 
 </body>
 
