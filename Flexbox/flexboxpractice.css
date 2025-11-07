@@ -1,9 +1,11 @@
 body {
     font: 1.2em / 1.5 sans-serif;
+    margin-left: 30%;
+    margin-right: auto;
 }
 
-.firstRow ul{
-    max-width: 700px;
+.firstRow ul {
+    max-width: 80%;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -11,15 +13,16 @@ body {
     justify-content: space-evenly;
 }
 
-.secondRow{
+.secondRow {
     max-width: 700px;
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: column;
 }
 
-.secondRow li{
+.secondRow li {
     background-color: #4d7298;
     border: 2px solid #77a6b6;
     border-radius: 0.5em;
@@ -27,9 +30,31 @@ body {
     padding: 0.5em;
     display: inline-block;
     text-decoration: none;
+    margin-right: 60%;
+    text-align: center;
 }
 
+.thirdRow {
+    max-width: 700px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 
+    width: 100%;
+}
+
+.thirdRow li {
+    width: 80%;
+    background-color: #4d7298;
+    border: 2px solid #77a6b6;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    color: white;
+    display: flex;
+    
+    text-decoration: none;
+}
 
 nav a:link,
 nav a.visited {
@@ -50,5 +75,17 @@ nav ul {
     border: 2px solid #f59133;
     background-color: #ffae62;
     padding: 50px;
-    margin: 100px;
+    width: 40%;
+}
+
+.third1{
+    flex-shrink: 2;
+}
+
+.third2{
+    flex-grow: 4;
+}
+
+.third3{
+    flex-shrink: 2;
 }
