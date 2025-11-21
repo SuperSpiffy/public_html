@@ -1,0 +1,35 @@
+/* removes padding around header image*/
+.header {
+    padding: 0px;
+}
+
+/*sidenav background color*/
+.bg-sidenav {
+    background-color: #3F6B90;
+}
+
+/*styles sidenav area*/
+.nav-link {
+    color: #D9E4EE
+}
+
+.nav-link:hover{
+    color: #CCCCCC;
+}
+      
+/*Style main content area*/
+main{
+    background-color: #FDFFFE;
+}
+
+.navbar{
+    background-color: #3F6B90;
+}
+
+.BG-color{
+    background-color: rgb(178, 178, 240);
+}
+
+.flex{
+    display: flex;
+}
