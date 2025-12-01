@@ -1,6 +1,7 @@
 /* removes padding around header image*/
 .header {
     padding: 0px;
+    height: 300px;
 }
 
 /*sidenav background color*/
@@ -13,23 +14,70 @@
     color: #D9E4EE
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #CCCCCC;
 }
-      
+
 /*Style main content area*/
-main{
+main {
     background-color: #FDFFFE;
 }
 
-.navbar{
+.navbar {
     background-color: #3F6B90;
 }
 
-.BG-color{
+.BG-color {
     background-color: rgb(178, 178, 240);
 }
 
-.flex{
+.flex {
     display: flex;
+}
+
+.textColor {
+    color: #CCCCCC;
+}
+
+
+.threePages {
+    width: 80%;
+    height: 100%;
+}
+
+.img-paddingThree {
+    padding-left: 20%;
+    padding-top: 15%;
+}
+
+
+.redBody {
+    width: 100%;
+    background-color: rgb(145, 21, 42);
+}
+
+.redDark {
+    color: rgb(87, 9, 22);
+}
+
+
+
+.greenBody {
+    width: 100%;
+    background-color: rgb(12, 99, 41);
+}
+
+.greenDark {
+    color: rgb(14, 59, 29);
+}
+
+
+
+.blueBody {
+    width: 100%;
+    background-color: rgb(32, 41, 95);
+}
+
+.purpleDark {
+    color: rgb(15, 22, 61);
 }
