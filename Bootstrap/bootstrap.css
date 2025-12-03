@@ -1,7 +1,6 @@
 /* removes padding around header image*/
 .header {
     padding: 0px;
-    height: 300px;
 }
 
 /*sidenav background color*/
@@ -43,11 +42,14 @@ main {
 .threePages {
     width: 80%;
     height: 100%;
+    display: block;
+    margin: auto;
 }
 
 .img-paddingThree {
-    padding-left: 20%;
-    padding-top: 15%;
+    display: block;
+    margin: auto;
+    width: 50%;
 }
 
 
@@ -78,6 +80,6 @@ main {
     background-color: rgb(32, 41, 95);
 }
 
-.purpleDark {
+.blueDark {
     color: rgb(15, 22, 61);
 }

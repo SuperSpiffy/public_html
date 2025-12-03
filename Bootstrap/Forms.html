@@ -78,25 +78,203 @@
                         </li>
                     </ul>
                 </nav>
+
+                <!-- creates dropdown on circle image-->
+                <p>
+                    <a class="rounded-circle" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls=" CollapseExample">
+                        <img src="images/SonkAdoresJellies.jpg" class="img-fluid rounded-circle">
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card-body textColor">
+                        The omnipresent Sonk, even now, is admiring the jellyfishes. Maybe you should as well.
+                    </div>
+                </div>
+
             </sidebar>
+
+            <!-- Main Body -->
             <main class="col-md-9 BG-color">
-                <h3>Home</h3>
+                <h3>A Form</h3>
 
-            </main>
-        </div><!-- ends sidebar/main row -->
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                        aria-expanded="false" aria-controls="multiCollapseExample1">Form</a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">Toggle second element</button>
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
 
-        <div class="row bg-dark text-white">
-            <footer class="col-md-4 text-left">&copy; 2025 Toad Martyr</footer>
-            <footer class="col-md-4 text-center">
-                50 Toad Toadster Dr. <br>
-                Peach's Castel, 1011011 <br>
-                555.555-5555
-            </footer>
-            <footer class="col-md-4 text-right">
-                Developed by <a href="mailto:Toad@gmail.com" target="_blank">Toad</a>
-            </footer>
-        </div> <!-- closes footer row -->
-    </div> <!-- end container fluid -->
+                                <script src="script.js"></script>
+                                <script LANGAUGE="JavaScript"> //specifies the kind of script (JavaScript)//
+
+                                    function formValidation(form) { //beginning 
+
+                                        var FirstName = form.fname.value;
+                                        var LastName = form.lname.value;
+                                        var Password = form.password.value;
+                                        var Email = form.email.value;
+                                        var Auto = form.cars.value;
+
+                                        var Firstline = ("Welcome " + FirstName + " " + LastName + "! Your password is " + Password + ", and your email is " + Email + ". Your car is a " + Auto + ".\n\n");
+
+                                        var Grade = form.grade.value;
+
+                                        var Vehicles = " ";
+                                        if (form.vehicle1.checked) {
+                                            Vehicles = form.vehicle1.value;
+                                        } else {
+                                            Vehicles = "No Bike"
+                                        }
+
+
+                                        if (form.vehicle2.checked) {
+                                            Vehicles = Vehicles + " " + form.vehicle2.value;
+                                        } else {
+                                            Vehicles = Vehicles + " No Car";
+                                        }
+
+                                        var Comment = form.message.value;
+
+                                        var SecondLine = ("You are in grade " + Grade + " your transportation  is " + Vehicles + " and your comment was: " + Comment);
+
+                                        alert(Firstline + SecondLine); //makes up 'submit' notif
+                                    }//end of form validation
+
+                                    function formCheckChange(form) {
+                                        //alert("troubleshoot error")
+                                        if (form.vehicle1.checked) {
+                                            document.getElementById("freshman").checked = true;
+                                        } else {
+                                            document.getElementById("freshman").checked = false;
+                                        }
+                                        if (form.vehicle2.checked) {
+                                            document.getElementById("seniors").checked = true;
+                                        } else {
+                                            document.getElementById("seniors").checked = false;
+                                        }
+
+
+
+                                    }
+
+                                </script>
+
+
+
+
+
+                                </head>
+
+
+                                <div class="formholder">
+
+                                    <form action="BasicForm.html" method="get">
+
+                                        <fieldset>
+                                            <legend>My Form:</legend>
+
+                                            <label for="fname">First name:</label>
+                                            <input type="text" id="fname" name="fname" value="John">
+                                            <br><br>
+
+                                            <label for="lname">Last name:</label>
+                                            <input type="text" id="lname" name="lname" value="Doe">
+                                            <br><br>
+
+                                            <label for="password">Password:</label>
+                                            <input type="password" id="password" name="password" value="password2">
+                                            <br><br>
+
+                                            <label for="email">Email:</label>
+                                            <input type="email" id="email" name="email"
+                                                value="27sadiemonahan@sau11.org">
+                                            <br><br>
+
+                                            <label for="cars">Choose a car:</label>
+                                            <select id="cars" name="cars">
+                                                <option value="volvo">Volvo</option>
+                                                <option value="saab">Saab</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                            <br><br>
+
+                                            <input type="radio" id="freshman" name="grade" value="freshman" checked>
+                                            <label for="freshman">Freshman</label><br>
+
+                                            <input type="radio" id="sophmore" name="grade" value="sophmore">
+                                            <label for="sophmore">Sophmore</label><br>
+
+                                            <input type="radio" id="junior" name="grade" value="junior">
+                                            <label for="junior">Junior</label><br>
+
+                                            <input type="radio" id="senior" name="grade" value="senior">
+                                            <label for="senior">Senior</label><br>
+
+                                            <br><br>
+                                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                                onClick="formCheckChange(this.form)">
+                                            <label for="vehicle1"> I have a bike</label><br>
+
+                                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"
+                                                onClick="formCheckChange(this.form)">
+                                            <label for="vehicle2"> I have a car</label><br>
+
+
+                                            <br><br>
+                                            <label for="w3review">Comments:</label><br>
+                                            <textarea id="message" name="message" rows="4"
+                                                cols="50"> This is my comment! (: </textarea>
+
+                                            <br><br>
+                                            <input type="submit" value="SUBMIT" style="margin-left:300px;"
+                                                onClick="formValidation(this.form)">
+                                            <br><br>
+                                            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+                                            <button type="reset" value="Reset">Reset</button>
+                                        </fieldset>
+
+                                    </form>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card card-body">
+                                Some placeholder content for the second collapse component of this multi-collapse
+                                example. This panel is hidden by default but revealed when the user activates the
+                                relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+</html>
+</main>
+</div><!-- ends sidebar/main row -->
+
+<div class="row bg-dark text-white">
+    <footer class="col-md-4 text-left">&copy; 2025 Toad Martyr</footer>
+    <footer class="col-md-4 text-center">
+        50 Toad Toadster Dr. <br>
+        Peach's Castel, 1011011 <br>
+        555.555-5555
+    </footer>
+    <footer class="col-md-4 text-right">
+        Developed by <a href="mailto:Toad@gmail.com" target="_blank">Toad</a>
+    </footer>
+</div> <!-- closes footer row -->
+</div> <!-- end container fluid -->
 </body>
 
 </html>
