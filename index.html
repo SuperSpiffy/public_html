@@ -1,39 +1,127 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="index.css">
+
 <html>
+
+
+<script> /*shit for bar button*/
+	function Display() {
+		var x = document.getElementById("myBar1");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+
+
+	}
+</script>
+
 
 <head>
 	<title> smonah's index </title>
 </head>
 
-<body class="mainColor">
+<!--stuck on button, why does it make drinks hover-->
+<div class="assButton">
+	<input class="" type="button" onclick="Display()" value="Section One">
+</div>
+
+<div id="myBar1"> <!--main container-->
+	<div id="myBar1" class="barContainer1"> <!--Whole image container-->
+
+
+		<div class="drinksContainerOne"> <!--Drinks contianer for Flex-->
+
+			<div id="drink" class="pinaColada"> <!--Five Pager Drink-->
+				<div class="drinkName">mmmm yum mmmmmm dink drink</div>
+				<a href="FivePage/index.html">
+					<img style="width: 90px; height: 175px;" src="imagesIndex/pinaColada.png" alt="drink" class="image">
+				</a>
+			</div> <!--Closes Five Pager Drink-->
+
+
+			<div id="drink" class="mintRefresher"> <!--Animal Sounds Drink-->
+				<a href="FivePage/AnimalSounds/AnimalSounds.html">
+					<img style="width: 100px; height: 125px;" src="imagesIndex/mintRefresher.png" alt="drink" class="image">
+				</a>
+			</div> <!--Closes Animal Sounds Drink-->
+
+
+			<div id="drink" class="strawberryDaq"> <!--Zen Garden Drink-->
+				<a href="zenGarden">
+					<img style="width: 120px; height: 165px;" src="imagesIndex/strawberryDaiquiri.png" alt="drink" class="image">
+				</a>
+			</div> <!--Closes Zen Garden Drink-->
+
+
+			<div id="drink" class="spicyDrink"> <!--Bootstrap Drink-->
+				<a href="Bootstrap">
+					<img style="width: 120px; height: 165px;" src="imagesIndex/spicyDrink.png" alt="drink" class="image">
+				</a>
+			</div> <!--Closes Bootstrap Drink-->
+
+
+			<div id="drink" class="bombPop"> <!--ThreePager Drink-->
+				<a href="TriColorWebsite/ThreePage.html">
+					<img style="width: px; height: 90px;" src="imagesIndex/bombPop.png" alt="drink" class="image">
+				</a>
+			</div> <!--Closes ThreePager Drink-->
+
+
+			<div id="drink" class="oldFashion"> <!--Tables Practice Drink-->
+				<a href="FivePage/TablePractice/tablespractice.html">
+					<img style="width: 90px; height: 100px;" src="imagesIndex/oldFashion.png" alt="drink" class="image">
+				</a>
+			</div> <!--Closes Tables Practice Drink-->
+
+
+			<div id="drink" class="monsterEnergy"> <!--Flexbox practice Drink-->
+				<a href="Flexbox/flexboxpractice.html">
+					<img style="width: 80px; height: 150px;" src="imagesIndex/monsterEnergy.png" alt="drink" class="image">
+				</a>
+			</div> <!--Closes Flexbox Practice Drink-->
+
+
+
+			
+
+		</div> <!--Closes drinks container-->
+
+	</div> <!--Closes bar image-->
+</div> <!--main container end-->
+
+
+
+
+
+
+<body>
 	<h1> Smonahan's Index </h1>
 </body>
 
 <!--Links to the Three Pages-->
 <nav>
-	<a href="TriColorWebsite/ThreePage.html"> Three Pager </a>
+	<!--<a href="TriColorWebsite/ThreePage.html"> Three Pager </a>-->
 	<br>
-	<a href="FivePage/index.html"> Five Pager </a>
+	<!--<a href="FivePage/index.html"> Five Pager </a>-->
 	<br>
 	<a href="BasicJavaScript/BasicForm.html"> Basic Form</a>
 	<br>
-	<a href="FivePage/AnimalSounds/AnimalSounds.html"> Animal Sounds</a>
+	<!--<a href="FivePage/AnimalSounds/AnimalSounds.html"> Animal Sounds</a>-->
 	<br>
-	<a href="FivePage/TablePractice/tablespractice.html"> Tables Practice</a>
+	<!--<a href="FivePage/TablePractice/tablespractice.html"> Tables Practice</a>-->
 	<br>
-	<a href="zenGarden"> CSS Zen Garden</a>
+	<!-- <a href="zenGarden"> CSS Zen Garden</a> -->
 	<br>
-	<a href="Flexbox/flexboxpractice.html"> Flexbox practice</a>
+	<!--<a href="Flexbox/flexboxpractice.html"> Flexbox practice</a>-->
 	<br>
 	<a href="Flexbox/TailWind/tailwind.html"> Tailwind</a>
 	<br>
-	<a href="Bootstrap"> Bootstrap</a>
+	<!--<a href="Bootstrap"> Bootstrap</a>-->
 
 </nav>
-	
 
-<body>
-	<img src="TriColorWebsite/images/Mause.png" alt="Mause" style=width:500px;height:500px;>
-</body>
+
 
 </html>

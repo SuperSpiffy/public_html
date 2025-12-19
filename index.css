@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(0, 6, 12);
+
+}
+
+.barContainer1 {
+    background-image: url(imagesIndex/barCounter.webp);
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: flex-end;
+}
+
+.drinksContainerOne {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 785px;
+    height: 200px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+}
+
+
+
+/* Drinks */
+.pinaColada {
+    padding-bottom: 30px;
+}
+
+.mintRefresher {
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+
+.strawberryDaq {
+    padding-bottom: 20px;
+    padding-right: 15px;
+}
+
+.spicyDrink {
+    padding-bottom: 5px;
+    width: 90px;
+}
+
+.oldFashion {
+    padding-bottom: 15px;
+    padding-right: 20px;
+}
+
+.monsterEnergy {
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.bombPop {
+    padding-bottom: 25px;
+}
+
+/* drinks ID*/
+
+#drink {
+    transition: transform .2s;
+}
+
+/* closes drinks ID */
+/* End drinks */
+
+
+
+
+/* Hover effect?? */
+#drink{
+    font-size: 0;
+}
+
+#drink:hover {
+    transform: scale(1.5);
+    /* IE 9 */
+    transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.drinkName{
+    display: flex;
+    
+
+}
+
+
+
+.assButton {
+    display: block;
+}
