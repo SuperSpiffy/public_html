@@ -4,37 +4,33 @@
 <html>
 
 
-<script> /*shit for bar button*/
-	function Display() {
-		var x = document.getElementById("myBar1");
-		if (x.style.display === "none") {
-			x.style.display = "block";
-		} else {
-			x.style.display = "none";
-		}
-	}
-
-	
-</script>
-
-
 <head>
 	<title> smonah's index </title>
 </head>
 
-<!--Button for first page-->
-<div class="assButton">
-	<input class="" type="button" onclick="Display()" value="Section One">
+
+<!-- make it so the two bars are closed when the web initially opens look at the functions below and try to understand them ykykyk -->
+
+<div class="buttonDiv">
+
+	<!--Button for first page-->
+	<div>
+		<input class="barButton" id="" type="button" onclick="Display1()" value="Section One">
+	</div>
+
+	<!--Button for second page-->
+	<div>
+		<input class="barButton" id="" type="button" onclick="Display2()" value="Section Two">
+	</div>
 </div>
-<!--Closes button for first page-->
-
-<div id="myBar1"> <!--main container-->
-	<div id="myBar1" class="barContainer1"> <!--Whole image container-->
 
 
-		<div class="drinksContainerOne"> <!--Drinks contianer for Flex-->
 
-			<div id="drink" class="pinaColada drinkName">  <!--Five Pager Drink-->
+<div id="myBar1"> <!--main container Bar1-->
+	<div class="barContainer1"> <!--Whole image container Bar1-->
+		<div class="drinksContainerOne"> <!--Drinks contianer for Flex Bar 1-->
+
+			<div id="drink" class="pinaColada drinkName"> <!--Five Pager Drink-->
 				<a href="FivePage/index.html">
 					<img style="width: 90px; height: 175px;" src="imagesIndex/pinaColada.png" alt="drink" class="image">
 				</a>
@@ -86,18 +82,46 @@
 				</a>
 			</div> <!--Closes Flexbox Practice Drink-->
 
+		</div> <!--Closes drinks container-->
+	</div> <!--Closes bar image-->
+</div> <!--closes main container-->
+
+
+
+
+<div id="myBar2"> <!--main container Bar2-->
+	<div class="barContainer2"> <!--Whole image container Bar2-->
+
+		<div class="drinksContainerTwo"> <!--Drinks contianer for Flex Bar 2-->
+
+			<div id="drink" class="blueDaq"> <!--Basic Javascipt practice Drink-->
+				<a href="BasicJavaScript/BasicForm.html">
+					<img style="width: 80px; height: 100px;" src="imagesIndex/blueDaq.png" alt="drink" class="image">
+				</a>
+			</div> <!--Closes Basic Javascript practice Drink-->
+
+			
+			<div id="drink" class="chocolateMilk"> <!--BreakoutGame Drink-->
+				<a href="BreakoutGameFolder/BreakoutIndex.html">
+					<img style="width: 110px; height: 200px;" src="imagesIndex/chocolateMilk.png" alt="drink"
+						class="image">
+				</a>
+			</div> <!--BreakoutGame Drink close-->
 
 
 
 
 		</div> <!--Closes drinks container-->
 
+	</div> <!--Closes bar2 image container-->
+</div> <!--Closes bar image-->
 
 
-	</div> <!--Closes bar image-->
 
-	<div class="drinkName">WIP NOT DONE!!! </div>
-	<div class="hide">Still in WIP</div>
+
+
+<div class="drinkName">WIP NOT DONE!!! ((put all drinks in one image eventually)) </div>
+<div class="hide">Still in WIP</div>
 
 </div> <!--main container end-->
 
@@ -108,15 +132,50 @@
 
 <body>
 	<h1 style="color: aliceblue;"> Smonahan's Index </h1>
+
+	<script> 
+	
+	
+	
+	/*shit for bar button*/
+	//functions
+		function Display1() {
+			let x = document.getElementById("myBar1");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
+
+		function Display2() {
+			let x = document.getElementById("myBar2");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
+
+		//variables
+		let 
+
+
+	</script>
 </body>
 
-<!--Links to the Three Pages-->
+
+
+
+
+
+<!--old links-->
 <nav>
 	<!--<a href="TriColorWebsite/ThreePage.html"> Three Pager </a>-->
 	<br>
 	<!--<a href="FivePage/index.html"> Five Pager </a>-->
 	<br>
-	<a href="BasicJavaScript/BasicForm.html"> Basic Form</a>
+	<!--<a href="BasicJavaScript/BasicForm.html"> Basic Form</a>-->
 	<br>
 	<!--<a href="FivePage/AnimalSounds/AnimalSounds.html"> Animal Sounds</a>-->
 	<br>
@@ -126,11 +185,11 @@
 	<br>
 	<!--<a href="Flexbox/flexboxpractice.html"> Flexbox practice</a>-->
 	<br>
-	<a href="Flexbox/TailWind/tailwind.html"> Tailwind</a>
+	<!--<a href="Flexbox/TailWind/tailwind.html"> Tailwind</a>-->
 	<br>
 	<!--<a href="Bootstrap"> Bootstrap</a>-->
 	<br>
-	<a href="BreakoutGameFolder/BreakoutIndex.html"> Javascript Breakout Game</a>
+	<!--<a href="BreakoutGameFolder/BreakoutIndex.html"> Javascript Breakout Game</a> -->
 	<br>
 
 </nav>

@@ -1,23 +1,23 @@
-body { /* bazinga */
+body {
+    /* bazinga */
     background-color: rgb(0, 6, 12);
 
 }
 
-.siteName{
+.siteName {
     display: flex;
     align-items: center;
     justify-content: center;
-   
 
     width: 50%;
     height: 100%;
     background-color: red;
     color: rgb(0, 0, 0);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
 }
 
-.siteNameDiv{  
+.siteNameDiv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,6 +37,27 @@ body { /* bazinga */
 }
 
 .drinksContainerOne {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 785px;
+    height: 200px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+}
+
+
+.barContainer2 {
+    background-image: url(imagesIndex/barCounter.webp);
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: flex-end;
+}
+
+.drinksContainerTwo {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -82,17 +103,23 @@ body { /* bazinga */
     padding-bottom: 25px;
 }
 
+.chocolateMilk {
+    padding-right: 0px;
+    /*why this shit don't work idk*/
+    padding-bottom: 20px;
+}
+
+.blueDaq {
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+
+
 /* drinks ID*/
 
 #drink {
     transition: transform .4s;
 }
-
-/* closes drinks ID */
-/* End drinks */
-
-
-
 
 /* Hover effect?? */
 #drink {
@@ -111,13 +138,16 @@ body { /* bazinga */
     text-align: center;
 }
 
+/* closes drinks ID */
+/* End drinks */
+
 
 
 .hide {
     display: none;
-  }
+}
 
-.drinkName:hover + .hide{
+.drinkName:hover+.hide {
     background-color: aliceblue;
     width: auto;
     height: 100px;
@@ -125,15 +155,16 @@ body { /* bazinga */
 
 }
 
-.drinkName{
+.drinkName {
     color: rebeccapurple;
 }
-    
 
 
 
 
-
-.assButton {
-    display: block;
+.buttonDiv {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
 }
