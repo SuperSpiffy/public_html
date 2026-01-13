@@ -30,9 +30,10 @@
 	<div class="barContainer1"> <!--Whole image container Bar1-->
 		<div class="drinksContainerOne"> <!--Drinks contianer for Flex Bar 1-->
 
-			<div id="drink" class="pinaColada drinkName"> <!--Five Pager Drink-->
+			<div id="drink" class="pinaColada"> <!--Five Pager Drink-->
 				<a href="FivePage/index.html">
-					<img style="width: 90px; height: 175px;" src="imagesIndex/pinaColada.png" alt="drink" class="image">
+					<img onmouseover="mouseOver()" onmouseleave="mouseOut()" style="width: 90px; height: 175px;"
+						src="imagesIndex/pinaColada.png" alt="drink" class="image">
 				</a>
 			</div> <!--Closes Five Pager Drink-->
 
@@ -82,6 +83,7 @@
 				</a>
 			</div> <!--Closes Flexbox Practice Drink-->
 
+
 		</div> <!--Closes drinks container-->
 	</div> <!--Closes bar image-->
 </div> <!--closes main container-->
@@ -100,7 +102,7 @@
 				</a>
 			</div> <!--Closes Basic Javascript practice Drink-->
 
-			
+
 			<div id="drink" class="chocolateMilk"> <!--BreakoutGame Drink-->
 				<a href="BreakoutGameFolder/BreakoutIndex.html">
 					<img style="width: 110px; height: 200px;" src="imagesIndex/chocolateMilk.png" alt="drink"
@@ -115,6 +117,11 @@
 
 	</div> <!--Closes bar2 image container-->
 </div> <!--Closes bar image-->
+
+<!--Website Name-->
+<div>
+	<p id="webName"></p>
+</div>
 
 
 
@@ -133,12 +140,43 @@
 <body>
 	<h1 style="color: aliceblue;"> Smonahan's Index </h1>
 
-	<script> 
-	
-	
-	
-	/*shit for bar button*/
-	//functions
+	<script>
+		//events
+		document.getElementById("webName").addEventListener("mouseover", mouseOver);
+
+
+
+
+
+		//variables
+		const pina = {
+			websiteName: "Five Page"
+		}
+
+		const empty = {
+			websiteName: " "
+		}
+
+
+
+
+		//functions
+		function mouseOver(name) {
+			document.getElementById("webName").innerHTML = name;
+			return name;
+		}
+
+		//use each individual drink name by tapping into each img's alt. Figure out hoe to pass arguement through above function
+		function idkName() {
+			let result = mouseOver("John");
+			document.getElementById("webName").innerHTML = "" + result;
+		}
+
+		function mouseOut() {
+			document.getElementById("webName").innerHTML = empty.websiteName;
+		}
+
+
 		function Display1() {
 			let x = document.getElementById("myBar1");
 			if (x.style.display === "none") {
@@ -157,8 +195,6 @@
 			}
 		}
 
-		//variables
-		let 
 
 
 	</script>
