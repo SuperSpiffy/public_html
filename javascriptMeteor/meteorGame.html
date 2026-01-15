@@ -5,83 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Meteors</title>
-
     <style>
-        canvas {
-            background: #04011a;
-            border: #504c70 4px solid;
-            display: block;
-            margin: 0 auto;
-        }
-
-        body {
-            background-color: #04011a;
-        }
+       
     </style>
-
 </head>
 
 <body>
-    <canvas id="myCanvas" width="600" height="620"></canvas>
-    <div id="triangle"> </div>
-    <!--<button id="runButton">Start game</button>-->
-
-    <!--javascript file!!-->
+    <canvas id="gameCanvas" width="700" height="500"></canvas>
     <script>
-        const canvas = document.getElementById("myCanvas");
+        const FPS = 30; //frames per second
+        const shipSize = 30; //ship height
+        
+        //I switched both of the variables for these, so if error, return to var
+        const canvas = document.getElementById("gameCanvas");
         const ctx = canvas.getContext("2d");
 
-        const boxHeight = 45;
-        const boxWidth = 50;
+        const ship = {
+            x: canvas.width / 2,
+            y: canvas.height / 2,
+            r: shipSize / 2,
+            a: 90 / 180 * Math.PI //convert to radians
 
-        let box = (canvas.width - boxWidth) / 2;
+        };
 
+        //game loop via what video says
+        setInterval(update, 1000 / FPS)
 
+        function update() {
+            //draws space
+            ctx.fillStyle = "#04011a";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        function draw() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            drawBox();
-            makeTriangle();
-            //drawPaddle();
-        }
-
-        function makeTriangle() {
-            ctx.beginPath();
-            ctx.moveTo(300, 575);
-            
-
-            ctx.lineWidth = 4;
-            ctx.lineTo(320, 620);
-            ctx.lineTo(280, 620);
-            ctx.lineTo(300, 572);
+            //draw triangular ship 
             ctx.strokeStyle = "#504c70";
-            ctx.stroke();
-            ctx.closePath();
-        }
-
-        function drawBox() {
+            ctx.lineWidth = shipSize / 20;
             ctx.beginPath();
-            ctx.rect(box, canvas.height - boxHeight, boxWidth, boxHeight);
-            ctx.fillStyle =  "red";
-            ctx.fill();
+            ctx.moveTo( //nose of the ship ((??????))
+                ship.x + ship.r * Math.cos(ship.a),
+                ship.y - ship.r * Math.sin(ship.a)
+            );
+            ctx.lineTo(//rear left
+                ship.x - ship.r * (Math.cos(ship.a) + Math.sin(ship.a)),
+                ship.y + ship.r * (Math.sin(ship.a) - Math.cos(ship.a))
+            );
             ctx.closePath();
+            
+            ctx.stroke();
+
+
+            //rotate ship
+
+            //move the ship
         }
-
-        draw();
-        /*function startGame() {
-            interval = setInterval(draw, 10);
-        }*/
-
-        /*const runButton =
-            document.getElementById("runButton");
-        runButton.addEventListener("click", () => {
-            startGame();
-            runButton.disabled = true;
-        });*/
-
 
     </script>
 </body>
+
 
 
 

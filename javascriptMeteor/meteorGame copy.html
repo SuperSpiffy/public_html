@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gamedev Canvas Workshop</title>
+
+    <style>
+        canvas {
+            background: #04011a;
+            border: #504c70 4px solid;
+            display: block;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: #04011a;
+        }
+    </style>
+
+</head>
+
+<body>
+    <canvas id="myCanvas" width="600" height="620"></canvas>
+    <button id="runButton">Start game</button>
+
+
+
+
+    <script> //Open JavaScript code here vvvvvv
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+
+
+        //define x and y ball position
+        let x = canvas.width / 2;
+        let y = canvas.height - 30;
+
+        //define dx and dy to simulate movement
+        let dx = 2;
+        let dy = -2;
+
+        //defining paddle
+        const paddleHeight = 10;
+        const paddleWidth = 75;
+
+        let paddleX = (canvas.width - paddleWidth) / 9;
+        let triangle = (canvas.width - paddleWidth) / 9;
+
+
+
+        //value for keys pressed for movement
+        let rightPressed = false;
+        let leftPressed = false;
+
+        let interval = 0;
+        let score = 0;
+        let lives = 3;
+
+        //listens for key presses
+        document.addEventListener("keydown", keyDownHandler);
+        document.addEventListener("keyup", keyUpHandler);
+
+        //mouse control event 
+        document.addEventListener("mousemove", mouseMoveHandler);
+
+        //functions open vvv
+
+        //ties keys to movement if pressed down
+        function mouseMoveHandler(e) {
+            const relativeX = e.clientX - canvas.offsetLeft;
+            if (relativeX > 0 && relativeX < canvas.width) {
+                paddleX = relativeX - paddleWidth / 2;
+            }
+        }
+
+        function keyDownHandler(e) {
+            if (e.key === "Right" || e.key === "ArrowRight") {
+                rightPressed = true;
+            }
+            else if (e.key === "Left" || e.key === "ArrowLeft") {
+                leftPressed = true;
+            }
+        }
+
+        //removes keys to movement if no button is pressed
+        //event parameter is represented by e
+        function keyUpHandler(e) {
+            if (e.key === "Right" || e.key === "ArrowRight") {
+                rightPressed = false;
+            }
+            else if (e.key === "Left" || e.key === "ArrowLeft") {
+                leftPressed = false;
+            }
+        }
+
+
+
+
+        function drawScore() {
+            ctx.font = "16px Arial";
+            ctx.fillStyle = "#0095DD";
+            ctx.fillText(`Score: ${score}`, 8, 20);
+        }
+
+        function drawLives() {
+            ctx.font = "16px Arial";
+            ctx.fillStyle = "red"
+            ctx.fillText(`Lives: ${lives}`, canvas.width - 65, 20);
+        }
+
+
+
+        //literally everything
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ship();
+            drawScore();
+            drawLives();
+
+            //moves paddle 
+            if (rightPressed && paddleX < canvas.width - paddleWidth) {
+                paddleX += 7;
+            } else if (leftPressed && paddleX > 0) {
+                paddleX -= 7;
+            }
+
+            //attempting to move triangle 
+            if (rightPressed && triangle < canvas.width - paddleWidth) {
+                triangle += 7;
+            } else if (leftPressed && triangle > 0) {
+                paddleX -= 7;
+            }
+        }
+
+
+        function ship() {
+            drawBox();
+            makeTriangle();
+        }
+
+        function makeTriangle() {
+            ctx.beginPath();
+            ctx.moveTo(300, 575);
+            ctx.lineWidth = 4;
+            ctx.lineTo(320, 620);
+            ctx.lineTo(280, 620);
+            ctx.lineTo(300, 572);
+            ctx.strokeStyle = "#504c70";
+            ctx.stroke();
+            ctx.closePath();
+
+        }
+
+        function drawBox() {
+            ctx.beginPath();
+            ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
+            ctx.fillStyle = "red";
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        function startGame() {
+            interval = setInterval(draw, 10);
+        }
+
+        const runButton =
+            document.getElementById("runButton");
+        runButton.addEventListener("click", () => {
+            startGame();
+            runButton.disabled = true;
+        });
+
+
+
+
+    </script> <!--Closes JavaScript Code ^^^^^^-->
+</body>
+
+</html>
