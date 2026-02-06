@@ -74,6 +74,18 @@ body {
     padding-bottom: 30px;
 }
 
+.pinaColadaName{
+    color: aliceblue;
+}
+
+/*
+.pinaColadaName:hover+.hide{
+    background-color: aliceblue;
+    width: auto;
+    height: 100px;
+    display: flex;
+}*/
+
 .mintRefresher {
     padding-bottom: 10px;
     padding-left: 25px;
@@ -128,10 +140,7 @@ body {
 
 #drink:hover {
     transform: scale(1.5);
-    /* IE 9 */
-    transform: scale(1.5);
-    /* Safari 3-8 */
-    transform: scale(1.5);
+
 
     color: black;
     font-size: 20px;
@@ -167,6 +176,26 @@ body {
     margin: auto;
 }
 
-#webName{
+#nameDisplay{
     color: aliceblue;
+    font-size: 65px;
+  
 }
+
+
+.displayDiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 2s;
+}
+ 
+/*fix transtition*/
+.displayDiv:hover{
+    opacity: 1;
+    
+}
+
+
