@@ -9,14 +9,15 @@ body {
     align-items: center;
     justify-content: center;
 
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-color: red;
-    color: rgb(0, 0, 0);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: xx-large;
+    color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
 }
 
+/*
 .siteNameDiv {
     display: flex;
     align-items: center;
@@ -25,6 +26,7 @@ body {
     width: 100%;
     height: 200px;
 }
+    */
 
 .barContainer1 {
     background-image: url(imagesIndex/barCounter.webp);
@@ -131,18 +133,18 @@ body {
 
 #drink {
     transition: transform .4s;
-}
-
-/* Hover effect?? */
-#drink {
     font-size: 0;
 }
 
+/* Hover effect?? */
+
+
 #drink:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
+    
 
 
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     text-align: center;
 }
@@ -152,6 +154,8 @@ body {
 
 
 
+
+/*
 .hide {
     display: none;
 }
@@ -167,6 +171,7 @@ body {
 .drinkName {
     color: rebeccapurple;
 }
+*/
 
 
 .buttonDiv {
@@ -176,26 +181,49 @@ body {
     margin: auto;
 }
 
+/* makes site names pretty (hopefully will add fade effect)*/
 #nameDisplay{
+    display: flex;
+    margin: auto;
+
     color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 65px;
-  
+}
+
+#nameDisplay:hover{
+    transition: opacity 2s;
+    color: aliceblue;
+    
+}
+
+.displayDiv{
+    display: flex;
+    width: 100%;
+    height: 200px;
 }
 
 
-.displayDiv{
+
+
+
+
+
+/*.displayDiv{
     display: flex;
     width: 100%;
     justify-content: center;
     margin: auto;
     opacity: 0;
     transition: opacity 2s;
+    color: aliceblue;
 }
  
-/*fix transtition*/
+fix transtition
 .displayDiv:hover{
     opacity: 1;
+    color: aliceblue;
     
 }
-
+*/
 

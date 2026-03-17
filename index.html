@@ -30,14 +30,14 @@
 	<div class="barContainer1"> <!--Whole image container Bar1-->
 		<div class="drinksContainerOne"> <!--Drinks contianer for Flex Bar 1-->
 
-			
+
 			<div id="drink" class="pinaColada"> <!--Five Pager Drink-->
 				<div onmouseover="mouseOver('Five Pager')" onmouseleave="mouseOut()"> <!--Hover div-->
 
 					<a href="FivePage/index.html">
 						<div class="webName">
-							<img style="width: 90px; height: 175px;"
-								src="imagesIndex/pinaColada.png" alt="drink" class="image">
+							<img style="width: 90px; height: 175px;" src="imagesIndex/pinaColada.png" alt="drink"
+								class="image">
 						</div>
 					</a>
 
@@ -66,8 +66,8 @@
 
 					<a href="zenGarden">
 						<div class="webName">
-							<img style="width: 120px; height: 165px;" src="imagesIndex/strawberryDaiquiri.png" alt="drink"
-								class="image">
+							<img style="width: 120px; height: 165px;" src="imagesIndex/strawberryDaiquiri.png"
+								alt="drink" class="image">
 						</div>
 					</a>
 
@@ -78,7 +78,7 @@
 
 			<div id="drink" class="spicyDrink"> <!--Bootstrap Drink-->
 				<div onmouseover="mouseOver('Bootstrap Drink')" onmouseleave="mouseOut()"> <!--Hover div-->
-					
+
 					<a href="Bootstrap">
 						<div class="webName">
 							<img style="width: 120px; height: 165px;" src="imagesIndex/spicyDrink.png" alt="drink"
@@ -96,7 +96,7 @@
 
 					<a href="TriColorWebsite/ThreePage.html">
 						<div class="webName">
-							<img style="width: px; height: 90px;" src="imagesIndex/bombPop.png" alt="drink" 
+							<img style="width: px; height: 90px;" src="imagesIndex/bombPop.png" alt="drink"
 								class="image">
 						</div>
 					</a>
@@ -110,8 +110,8 @@
 
 					<a href="FivePage/TablePractice/tablespractice.html">
 						<div class="webName">
-							<img style="width: 90px; height: 100px;" src="imagesIndex/oldFashion.png" alt="drink" 
-							class="image">
+							<img style="width: 90px; height: 100px;" src="imagesIndex/oldFashion.png" alt="drink"
+								class="image">
 						</div>
 					</a>
 
@@ -150,8 +150,9 @@
 
 					<a href="BasicJavaScript/BasicForm.html">
 						<div class="webName">
-							<img onmouseover="mouseOver('Basic Javascript Practice')" onmouseleave="mouseOut()" style="width: 80px; height: 100px;" src="imagesIndex/blueDaq.png" alt="drink" 
-							class="image">
+							<img onmouseover="mouseOver('Basic Javascript Practice')" onmouseleave="mouseOut()"
+								style="width: 80px; height: 100px;" src="imagesIndex/blueDaq.png" alt="drink"
+								class="image">
 						</div>
 					</a>
 
@@ -191,8 +192,8 @@
 
 
 
-<div class="drinkName">WIP NOT DONE!!! ((put all drinks in one image eventually)) </div>
-<div class="hide">Still in WIP</div>
+<!--<div class="drinkName"></div> -->
+
 
 </div> <!--main container end-->
 
@@ -202,13 +203,15 @@
 
 
 <body>
-	<h1 style="color: aliceblue;"> Smonahan's Index </h1>
-
+	<div class="siteName">
+		<p> Smonahan's Index </pp>
+	</div>
 	<script>
-		//event for displaying website name on hover
-		document.getElementById("nameDisplay").addEventListener("mouseover", mouseOver);
+
 
 		//functions
+
+		//event for displaying website name on hover
 		function mouseOver(name) {
 			document.getElementById("nameDisplay").innerHTML = name;
 			return name;
@@ -218,6 +221,18 @@
 			document.getElementById("nameDisplay").innerHTML = " ";
 		}
 
+
+		//put both displays into one function using different variables, maybe put bar2 display = none to begin and then continue with only one can display as a block at a time
+		function divDisplay() {
+			let x = document.getElementById("myBar1");
+			let y = document.getElementById("myBar2");
+
+			if (x.style.display === "block") {
+				y.style.display = "none"
+			} else if (y.style.display === "block") {
+				x.style.display = "none"
+			}
+		}
 
 		function Display1() {
 			let x = document.getElementById("myBar1");
