@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors</title>
+</head>
+
+<body>
+    <h1>Authors</h1>
+    <ul id="authors"></ul> <!--remember ul is unordered lists-->
+
+
+</body>
+
+<script>
+    const ul = document.getElementById('authors');
+    const list = document.createDocumentFragment();
+    const url = 'https://jsonplaceholder.typicode.com/users'; //copied this link from the Digital Ocean tut
+
+    fetch(url)
+        .then((response) => {  //the response is the parameter to the function within the then() method
+            return response.json(); //returns response parameter into json data
+        })
+        .then((data) => { //data is an argument because it is being given a value(??)
+            let authors = data;
+            console.log(data);
+
+            authors.map(function (author) {
+                let li = document.createElement('li');
+                let name = document.createElement('h2'); //name of the author
+                let email = document.createElement('span'); //email of the author
+
+                name.innerHTML = '${author.name}';
+                email.innerHTML = '${author.email}'
+
+                //appending these to the docFragment list
+                li.appendChild(name);
+                li.appendChild(email);
+                list.appendChild(li);
+                console.log(li);
+
+                console.log(author); //shows the big list of names idk lol
+            });
+            
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
+
+    //this appends the above docFragment list to the unordered list to change 'authors' id 
+    ul.appendChild(list);
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //notes to understand fetch API
+    /*fetch(url)
+        .then(function(){
+            //handle the response
+        })
+        .catch(function(){
+            //handle the error (if there is an error)(reject)
+        });*/
+
+    //application programming interface API please don't say "advanced" for the "A" bc thats not what it means lol
+</script>
+
+</html>
