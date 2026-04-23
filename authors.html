@@ -25,7 +25,8 @@
         })
         .then((data) => { //data is an argument because it is being given a value(??)
             let authors = data;
-            console.log(data);
+            //console.log(data);
+        
 
             authors.map(function (author) {
                 let li = document.createElement('li');
@@ -39,9 +40,10 @@
                 li.appendChild(name);
                 li.appendChild(email);
                 list.appendChild(li);
-                console.log(li);
+                //console.log(li);
 
-                console.log(author); //shows the big list of names idk lol
+                //console.log(author); //shows the big list of names idk lol
+                
             });
             
         })

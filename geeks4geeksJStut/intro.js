@@ -1,0 +1,1 @@
+console.log("2.) Hello from a javascript file!");
