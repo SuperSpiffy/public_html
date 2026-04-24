@@ -2,28 +2,72 @@
 <html lang="en">
 
 <head></head>
+
 <body>
-    <p>1. Check console for message, we start with super basics n will grow (:</p>
-    <p style="font-size: small;">should print: "Hello Hello!"</p>
+    <div class="body">
+
+        <h2>Intro + Using Js in HTML</h2>
+        <p>1.1 Check console for message, we start with super basics n will grow (:</p>
+        <p style="font-size: small;">should print: "Hello Hello!"</p>
+        <br><br>
+
+
+        <!--Adding JavaScript in HTML Document G4G.org-->
+        <p>2.1 Adding JavaScript in HTML Doc (check console)</p>
+        <br><br>
+
+        
+        <button onclick="alert('Button Clicked! Woah')">
+            3.1 Click here !!
+        </button>
+        <br><br>
+
+        <p id="demo"> </p>
+        <p> ^^^^just use getElementById in body, not header ^^^^</p>
+        <br><br>
+
+
+        <p id="demoJSbutton">hhhh</p>
+        <button id="demoJSbutton" onclick="demoBttnChange()">Click here!</button>
+        <br><br><br><br>
+       
+     
+
+        <h2>Variables and Datatypes</h2>
+        <h3>Check Console for practice on Variables</h3>
+
+
+
+
+        <!-------------------------This is Javascript Code-------------------------->
+        <script>//javascript code, duh (:
+            console.log("1.1) Hello Hello!");
+            document.getElementById("demo").innerHTML = "4.1 This text was changed in body DOM";
+
+            //https://www.geeksforgeeks.org/javascript/javascript-tutorial/ tut
+        </script>
+        <!--------------------------------------------------->
+        
+        <!--Links javascript file to run javascript code seperatly in JS file (Not HTML body)-->
+         <script src="intro.js" async></script>
+        <!--^^ uses asycn for optimal performace for user-->
+
+        <!------------------------to style the page (CSS)---------------------------->
+        <style>
+            body {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+
+            .body {
+                width: 85%;
+                background-color: rgb(197, 197, 197);
+            }
+        </style>
+    </div>
     
-    <!--Adding JavaScript in HTML Document G4G.org-->
-    <p>Adding JavaScript in HTML Doc</p>
-    <button onclick="alert('Button Clicked!')">
-        3. Click here !!
-    </button>
-
-
-    <p id="demo"> hhh </p>
-    <p> added javascript into (NOT the header tag G4G LIES do it in below script in body jesus christ) ^^^^</p>
-
-    <script>//javascript code, duh (:
-        console.log("1.) Hello Hello!");
-
-        document.getElementById("demo").innerHTML = "New text!";
-
-
-        //https://www.geeksforgeeks.org/javascript/javascript-tutorial/ tut
-    </script>
 </body>
 
 </html>
