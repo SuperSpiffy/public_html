@@ -2,21 +2,14 @@ body {
     background-color: beige
 }
 
-.anotherDivOMG{
-    background-color: rgb(111, 255, 0);
 
-    margin: auto;
-    width: 75%;
-
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+.disco {
+    background-image: url(images/party-dance-floor-background-24326791.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #bodyDiv {
-    background-color: aqua;
 
     margin: auto;
     width: 75%;
@@ -26,6 +19,7 @@ body {
 }
 
 #h1 {
+    font-family: Arial Narrow, sans-serif;
     background-color: aliceblue;
 
     display: flex;
@@ -57,25 +51,13 @@ body {
     height: 100px;
 }
 
-.navDiv {
-    background-color: purple;
-    width: 100%;
-    height: 100px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 .navBarDiv {
     background-color: brown;
 
     display: flex;
     justify-content: center;
-    align-items: center;
 
-    width: 50%;
+    width: 100%;
     height: 50px;
 }
 
@@ -83,10 +65,140 @@ body {
 .btn {
     background-color: yellow;
 
-    width: 50px;
-    height: 20px;
+    padding: 8px 6px 8px 6px;
+    margin-right: 10px;
+    font-family: Arial Narrow, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainImg1 {
+    /*background-color: black;*/
+    width: 50%;
+    height: 450px;
+
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mainImg2 {
+    /*background-color: yellow;*/
+    width: 55%;
+    height: 300px;
+    float: left;
+    transform: rotateY(180deg)
+}
+
+.mainImg3 {
+    /*background-color: red;*/
+    width: 45%;
+    height: 300px;
+    float: right;
+    display: flex;
+}
+
+
+.textContainer {
+    padding-left: 300px;
+}
+
+.textDiv {
+    background-color: aliceblue;
+    width: 341px;
+    height: 80px;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.text {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+}
+
+.colorDrop {
+    width: 500px;
+    height: 40px;
+}
+
+#img {
+    animation-name: firstAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#img2 {
+    animation-name: firstAnim;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+#img3 {
+    animation-name: firstAnim;
+    animation-duration: 2.75s;
+    animation-iteration-count: infinite;
+    padding-bottom: 200px;
+}
+
+
+
+
+@keyframes firstAnim {
+    0% {
+        width: 90%;
+        height: 50%;
+    }
+
+    20% {
+        transform: rotate(5deg);
+    }
+
+    20% {
+        width: 87%;
+        height: 50%;
+    }
+
+    30% {
+        transform: rotate(-5deg);
+    }
+
+    40% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    60% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        width: 50%;
+        height: 48%;
+    }
+
+    78% {
+        width: 48%;
+        height: 47%;
+    }
+
+    99% {
+        width: 91%;
+        height: 50%;
+    }
+
+    100% {
+        width: 90%;
+        height: 50%;
+    }
 }
