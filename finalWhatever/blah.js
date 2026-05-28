@@ -1,11 +1,37 @@
-function loading(){
-    const load = document.getElementById("loadingDiv").style; //defining load as a style element
-    const disappear = document.getElementById("bodyDiv").style;
 
-    disappear.opacity = "0"
+function theUltimateLoadFunction(link) {
+    function loading() {
+        const load = document.getElementById("loadingDiv").style; //defining load as a style element
+        const disappear = document.getElementById("bodyDiv").style;
+        let text = document.getElementById("text");
+        let loadImg = document.getElementById("loadImage").style;
 
-    load.backgroundColor = "black";
-    load.width = "10000px"
-    load.height = "10000px"
+        loadImg.opacity = 0.5;
+        text.innerHTML = "wait your ass up";
+        text.style.opacity = 0.5;
+        disappear.opacity = "0";
 
-}
+        load.backgroundColor = "black";
+        load.width = "10000px";
+        load.height = "1000px";
+
+    }
+    function wait() {
+        window.setTimeout(waitLoad, 3000);
+    }
+    function waitLoad() {
+        window.location.href = link;
+    }
+
+    //this is what theUltimateLoadFunction is doing vvvvv
+    loading();
+    wait();
+};
+
+
+
+//const seconds = 3000;
+
+
+
+
