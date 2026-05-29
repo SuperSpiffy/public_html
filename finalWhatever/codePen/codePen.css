@@ -87,7 +87,8 @@
 
     /*THIS IS TO EDIT HEIGHT AND WDTH OF BLACK SQuARE PLS AND TY BYE*/
     height: 800px;
-    width: 800px;
+    width: 100%;
+    margin: auto;
 }
 
 .scene>div {
@@ -127,79 +128,13 @@ html {
     overflow: clip;
 }
 
-
-
-
-
-
-
-
-
-/****************** MY CODE HELP ME ***************/
-
-
-#bodyDiv {
-    margin: auto;
-    width: 75%;
-    height: 1000px;
-
-}
-
-#h1 {
-    font-family: Arial Narrow, sans-serif;
-    background-color: aliceblue;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
+.borderStuff{
+    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 250px;
+    background-color: rgb(7, 0, 26);
 }
 
-.header {
-    /*background-color: red;*/
-
-    width: 100%;
-    height: 100px;
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.padding{
+    padding-left: 20px;
 }
-
-.padding {
-    background-color: red;
-    padding-top: 5%;
-
-    width: 100%;
-    height: 100px;
-}
-
-.navBarDiv {
-    background-color: brown;
-
-    display: flex;
-    justify-content: center;
-
-    width: 100%;
-    height: 50px;
-}
-
-
-.btn {
-    background-color: yellow;
-
-    padding: 8px 6px 8px 6px;
-    margin-right: 10px;
-    font-family: Arial Narrow, sans-serif;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-

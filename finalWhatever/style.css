@@ -1,3 +1,5 @@
+/*************Stylesheet Open*************/
+
 body {
     background-color: beige
 }
@@ -12,55 +14,6 @@ body {
 
     width: 75px;
     height: px;
-}
-
-#loadImage {
-    opacity: 0;
-    animation-name: spin;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-#text {
-    padding-right: 45px;
-    font-family: Arial Narrow, sans-serif;
-    color: aliceblue;
-    font-size: xx-large;
-}
-
-.loadItemsContainer {
-    display: flex;
-    justify-content:baseline;
-    
-
-    width: 100%;
-    height: auto;
-}
-
-.containerDiv {
-    margin: auto;
-    width: 75%;
-    height: 1000px;
-
-    position: absolute;
-    align-items: center;
-
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-}
-
-
-.disco {
-    background-image: url(images/party-dance-floor-background-24326791.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    width: 1000px;
-    height: 1000px;
-
 }
 
 #bodyDiv {
@@ -136,6 +89,78 @@ body {
 }
 
 
+.loadingDiv {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    align-content: center;
+    justify-content: center;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
+
+/********** Stylesheet close ^^^^^^*********/
+
+
+/*************First Index Open vvvvvvvvvvvvv**************/
+#loadImage {
+    opacity: 0;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#text {
+    padding-right: 45px;
+    font-family: Arial Narrow, sans-serif;
+    color: aliceblue;
+    font-size: xx-large;
+}
+
+.loadItemsContainer {
+    display: flex;
+    justify-content: baseline;
+
+
+    width: 100%;
+    height: auto;
+}
+
+.containerDiv {
+    margin: auto;
+    width: 75%;
+    height: 1000px;
+
+    position: absolute;
+    align-items: center;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+
+.disco {
+    background-image: url(images/party-dance-floor-background-24326791.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 1000px;
+    height: 1000px;
+
+}
+
+
+
+
 /*Images are the hedgehogs dancing*/
 .mainImg1 {
     width: 50%;
@@ -165,7 +190,6 @@ body {
 
 }
 
-
 .textContainer {
     padding-left: 300px;
 
@@ -183,13 +207,6 @@ body {
     justify-content: center;
 }
 
-.text {
-    width: 100%;
-    height: 50px;
-    background-color: red;
-
-
-}
 
 .colorDrop {
     /*for confetti, hopefully (:*/
@@ -286,20 +303,16 @@ body {
     }
 }
 
+/*************First Index Close ^^^^^^^^^**************/
 
+/************Second Index Open vvvvvvvvvv**************/
 
-.loadingDiv {
-    position: absolute;
+.interrogation {
+    background-image: url(images/backgroundInterrogation.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
 
     width: 100%;
     height: 100%;
-
-    align-content: center;
-    justify-content: center;
-
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
 }
