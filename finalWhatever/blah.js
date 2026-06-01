@@ -28,10 +28,51 @@ function theUltimateLoadFunction(link) {
     wait();
 };
 
+/////////////Index2//////////
 
 
-//const seconds = 3000;
+/*
+function tabRev() {
+    let tab = document.getElementsByClassName("tab");//button itself
+    const container = document.getElementById("containerDiv"); //what we want to close?
+    let position = 0;
+
+    id = setInterval(frameElement, 5);
+
+    function frame() {
+        if (position)
+    }
+
+
+
+};
+*/
+
+//literally from W3 schools idk bro
+function tabRev() {
+    const tab = document.getElementsByClassName("tab");//button itself
+    let container = document.getElementById("containerDiv").style; //what we want to close?
+
+    let i;
+
+    for (i = 0; i < container.length; i++) {
+        container[i].addEventListener("click", function(){
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+
+   
+    //document.addEventListener("click", display);
 
 
 
 
+
+
+}
