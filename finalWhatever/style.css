@@ -14,6 +14,7 @@ body {
 
     width: 75px;
     height: px;
+    background-color: rgb(182, 182, 182);
 }
 
 #bodyDiv {
@@ -56,6 +57,7 @@ body {
 }
 
 .padding {
+    
     background-color: red;
     padding-top: 5%;
 
@@ -66,6 +68,7 @@ body {
 }
 
 .navBarDiv {
+    
     background-color: brown;
 
     display: flex;
@@ -85,11 +88,12 @@ body {
     padding: 8px 6px 8px 6px;
     font-family: Arial Narrow, sans-serif;
 
-
+    
 }
 
 
 .loadingDiv {
+    
     position: absolute;
 
     width: 100%;
@@ -321,17 +325,17 @@ body {
 .btnContainer {
     /*to try and keep button below main website header*/
     align-content: center;
-
-    align-self: flex-end;
-    position: absolute;
-
-    padding-bottom: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
 
+   
+    padding-top: 3%;
+    width: 100%;
+    height: 20%;
 
-
-    width: 100px;
-    height: 100px;
+    z-index: 3;
 }
 
 .tab {
@@ -339,18 +343,26 @@ body {
     width: 85px;
     height: 45px;
 
+    display: flex;
+
     align-items: center;
     justify-content: center;
+    position: relative;
 
     display: flex;
+    z-index: 3;
 }
 
 .tabDiv_MainDiv {
     width: 100%;
-    height: 300px;
-
-    display: flex;
-    justify-content: center;
-    align-content: baseline;
+    height: 100%;
+    
     position: relative;
+}
+
+.holder{
+    height: 500px;
+    padding-bottom: 500px;
+   
+    
 }

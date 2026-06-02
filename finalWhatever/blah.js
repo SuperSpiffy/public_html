@@ -50,29 +50,65 @@ function tabRev() {
 
 //literally from W3 schools idk bro
 function tabRev() {
-    const tab = document.getElementsByClassName("tab");//button itself
+    const tab = document.getElementById("tab");//button itself
     let container = document.getElementById("containerDiv").style; //what we want to close?
 
-    let i;
+    // tab.addEventListener("click", function(){
+    //     container.display = "none";
 
-    for (i = 0; i < container.length; i++) {
-        container[i].addEventListener("click", function(){
-            this.classList.toggle("active");
-            let content = this.nextElementSibling;
-            if (content.style.maxHeight){
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
+    //     if (container.display === "block")
+
+    // });
+
+
+    // container.display = null;
+
+    // if(container.display === null){
+    //     tab.addEventListener("click",  function(){
+    //         container.display = "block"
+    //     });
+    // }
+    // else if(container.display === "block"){
+    //     tab.addEventListener("click", function(){
+    //         container.display = "none"
+    //     })
+    // }else{
+    //     container.display = null;
+    // }
+
+    // let controller = true;
+
+    // if(controller === true){
+    //     controller = false;
+    //     console.log(controller);
+    //     tab.addEventListener("click", function(){
+    //         container.display = "none";
+    //     });
+    // }
+    // if(controller === false){
+    //     controller = true;
+    //     console.log(controller);
+    //     tab.addEventListener("click", function(){
+    //         container.display = "block";
+    //     });
+    // }
+
+
+    //this does NOT work learn why please
+    let controller = 0;
+
+    if (controller = 0) {
+        container.display = "block";
+        tab.addEventListener("click", function(){
+            controller++;
+            console.log(controller);
+            return controller
         });
     }
 
-   
-    //document.addEventListener("click", display);
+    console.log(controller);
 
 
 
 
-
-
-}
+};
