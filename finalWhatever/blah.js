@@ -53,61 +53,26 @@ function tabRev() {
     const tab = document.getElementById("tab");//button itself
     let container = document.getElementById("containerDiv").style; //what we want to close?
 
-    // tab.addEventListener("click", function(){
-    //     container.display = "none";
-
-    //     if (container.display === "block")
-
-    // });
-
-
-    // container.display = null;
-
-    // if(container.display === null){
-    //     tab.addEventListener("click",  function(){
-    //         container.display = "block"
-    //     });
-    // }
-    // else if(container.display === "block"){
-    //     tab.addEventListener("click", function(){
-    //         container.display = "none"
-    //     })
-    // }else{
-    //     container.display = null;
-    // }
-
-    // let controller = true;
-
-    // if(controller === true){
-    //     controller = false;
-    //     console.log(controller);
-    //     tab.addEventListener("click", function(){
-    //         container.display = "none";
-    //     });
-    // }
-    // if(controller === false){
-    //     controller = true;
-    //     console.log(controller);
-    //     tab.addEventListener("click", function(){
-    //         container.display = "block";
-    //     });
-    // }
-
-
     //this does NOT work learn why please
-    let controller = 0;
+    let count = increment(0);
+    tab.addEventListener("click", increment);
+        
 
-    if (controller = 0) {
-        container.display = "block";
-        tab.addEventListener("click", function(){
-            controller++;
-            console.log(controller);
-            return controller
-        });
-    }
+    function increment(i) {
+        if(tab.addEventListener('click', function(){
+        }) //this is SO broken what the hell
+    );
 
-    console.log(controller);
+    console.log(count);
 
+
+    // if (count <= 0) {
+    //     container.display = "block";
+    // } else if (0 < count === 1) {
+    //     container.display = "none";
+    // } else if (counter > 2) {
+    //     count = 0;
+    // }
 
 
 
