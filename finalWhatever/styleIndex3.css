@@ -1,0 +1,202 @@
+/*************Stylesheet Open*************/
+
+body {
+    background-color: beige
+}
+
+
+.navButton {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+
+    width: 75px;
+    height: px;
+    background-color: rgb(182, 182, 182);
+}
+
+#bodyDiv {
+    padding: 5px;
+    border-color: rgb(182, 158, 128);
+    border-width: 5px;
+    border-style: solid;
+
+
+    margin: auto;
+    width: 75%;
+    height: 1000px;
+
+
+
+}
+
+#h1 {
+    font-family: Arial Narrow, sans-serif;
+    background-color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.header {
+    /*background-color: red;*/
+
+    width: 100%;
+    height: 100px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.padding {
+
+    background-color: red;
+    padding-top: 5%;
+
+    width: 100%;
+    height: 100px;
+
+
+}
+
+.navBarDiv {
+
+    background-color: brown;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.btn {
+    padding: 8px 6px 8px 6px;
+    font-family: Arial Narrow, sans-serif;
+
+
+}
+
+
+
+.loadingDiv {
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    align-content: center;
+    justify-content: center;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
+
+#loadImage {
+    opacity: 0;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#text {
+    padding-right: 45px;
+    font-family: Arial Narrow, sans-serif;
+    color: aliceblue;
+    font-size: xx-large;
+}
+
+.loadItemsContainer {
+    display: flex;
+    justify-content: baseline;
+
+
+    width: 100%;
+    height: auto;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/********** Stylesheet close ^^^^^^*********/
+
+.numContainer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+
+  
+    display: flex;
+    justify-content: center;
+}
+
+#num{
+    position: absolute;
+
+    width: 100%;
+    height: 75px;
+
+    font-size: xx-large;
+    align-self: center;
+    justify-self: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btnIncrements{
+    font-family: Arial Narrow, sans-serif;
+    width: 100px;
+    height: 55px;
+    
+    
+}
+
+.btnIncrements_Div{
+    width: 100%;
+    height: 75px;
+    padding-bottom: 95px;
+    z-index: 2;
+
+    display: flex;
+    
+    justify-content: center;
+    align-self: self-end;
+}

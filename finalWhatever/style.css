@@ -109,10 +109,6 @@ body {
 
 }
 
-/********** Stylesheet close ^^^^^^*********/
-
-
-/*************First Index Open vvvvvvvvvvvvv**************/
 #loadImage {
     opacity: 0;
     animation-name: spin;
@@ -135,6 +131,13 @@ body {
     width: 100%;
     height: auto;
 }
+
+/********** Stylesheet close ^^^^^^*********/
+
+
+/*************First Index Open vvvvvvvvvvvvv**************/
+
+
 
 .containerDiv {
     margin: auto;

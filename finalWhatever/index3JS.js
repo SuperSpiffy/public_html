@@ -1,5 +1,6 @@
-
 function theUltimateLoadFunction(link) {
+
+    
     function loading() {
         const load = document.getElementById("loadingDiv").style; //defining load as a style element
         const disappear = document.getElementById("bodyDiv").style;
@@ -28,48 +29,26 @@ function theUltimateLoadFunction(link) {
     wait();
 };
 
-/////////////Index2//////////
+let num = document.getElementById("num").innerHTML;
+let counter = 0;
+const button_add = document.getElementById("add").addEventListener('click', increase(counter));
+const button_minus = document.getElementById("minus").addEventListener('click', decrease(counter));
 
 
-/*
-function tabRev() {
-    let tab = document.getElementsByClassName("tab");//button itself
-    const container = document.getElementById("containerDiv"); //what we want to close?
-    let position = 0;
-
-    id = setInterval(frameElement, 5);
-
-    function frame() {
-        if (position)
-    }
-
-
-
-};
-*/
-
-//literally from W3 schools idk bro
-function tabRev() {
-    const tab = document.getElementById("tab");//button itself
-    let container = document.getElementById("containerDiv").style; //what we want to close?
-
-    //this does NOT work learn why please
-    let count = 0;
-    let inc_Count = ++count;
-
-    function listen() {
-        tab.addEventListener("click", function(){
-            count = inc_Count;
-        });
-    };
-
+function update(){
     
-
-
-
-    console.log(count);
-
-
-    
-
 };
+
+function increase(i){
+    i++;
+    update();
+};
+
+function decrease(i){
+    i--;
+    update();
+}
+
+console.log("add", button_add);
+
+console.log("minus", button_minus);
