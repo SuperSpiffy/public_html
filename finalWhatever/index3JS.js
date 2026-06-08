@@ -1,6 +1,6 @@
 function theUltimateLoadFunction(link) {
 
-    
+
     function loading() {
         const load = document.getElementById("loadingDiv").style; //defining load as a style element
         const disappear = document.getElementById("bodyDiv").style;
@@ -29,26 +29,37 @@ function theUltimateLoadFunction(link) {
     wait();
 };
 
-let num = document.getElementById("num").innerHTML;
+//BUTTON BUTTON BUTTON COUNTER COUNTER COUNTER AHHHHH
 let counter = 0;
-const button_add = document.getElementById("add").addEventListener('click', increase(counter));
-const button_minus = document.getElementById("minus").addEventListener('click', decrease(counter));
 
-
-function update(){
-    
+function update() {
+    let num = document.getElementById("num").innerHTML = counter;
 };
 
-function increase(i){
-    i++;
+function increase() {
+    cheeringImg_onclick();
+    counter++;
     update();
 };
 
-function decrease(i){
-    i--;
+function decrease() {
+    counter--;
     update();
 }
+//BUTTON COUNTER CLOSE
 
-console.log("add", button_add);
 
-console.log("minus", button_minus);
+
+//cheer for me pls
+
+let cheerImg = document.getElementById("cheerIMG").style;
+cheerImg.opacity = 0;
+cheerImg.zIndex = 0;
+
+function cheerShow(){
+    cheerImg.opacity = 1;
+}
+//imsotired help lmao
+function cheeringImg_onclick(){
+    setTimeout(cheerShow, )
+}
