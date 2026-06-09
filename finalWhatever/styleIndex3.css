@@ -203,14 +203,37 @@ body {
 }
 
 
-.cheer img {
+#cheerIMG {
     padding-top: 400px;
     width: 100%;
     height: 65%;
     position: absolute;
     z-index: 5;
+    opacity: 0;
+
+    transition-property: opacity;
+
+}
+ 
+#cheerIMG:active {
+    opacity: 1;
+    
+} 
+
+#newid {
+    background-color: aqua;
 }
 
-#newid{
-    background-color: aqua;
+@keyframes jumpFade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }

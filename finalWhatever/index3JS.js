@@ -45,6 +45,7 @@ function increase() {
 function decrease() {
     counter--;
     update();
+    cheeringImg_onclick();
 }
 //BUTTON COUNTER CLOSE
 
@@ -53,13 +54,16 @@ function decrease() {
 //cheer for me pls
 
 let cheerImg = document.getElementById("cheerIMG").style;
-cheerImg.opacity = 0;
-cheerImg.zIndex = 0;
 
-function cheerShow(){
-    cheerImg.opacity = 1;
-}
+cheerImg.zIndex = -1;
+cheerImg.opacity = 0;
+
+
+
+
+
 //imsotired help lmao
-function cheeringImg_onclick(){
-    setTimeout(cheerShow, )
+function cheeringImg_onclick() {
+    
+
 }
