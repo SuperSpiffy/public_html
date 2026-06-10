@@ -21,9 +21,9 @@ body {
 
 #bodyDiv {
     padding: 5px;
-    border-color: rgb(182, 158, 128);
+    /* border-color: rgb(182, 158, 128);
     border-width: 5px;
-    border-style: solid;
+    border-style: solid; */
 
 
     margin: auto;
@@ -187,6 +187,7 @@ body {
     font-family: Arial Narrow, sans-serif;
     width: 100px;
     height: 55px;
+    z-index: 3;
 
 }
 
@@ -203,26 +204,10 @@ body {
 }
 
 
-#cheerIMG {
-    padding-top: 400px;
-    width: 100%;
-    height: 65%;
-    position: absolute;
-    z-index: 5;
-    opacity: 0;
 
-    transition-property: opacity;
 
-}
- 
-#cheerIMG:active {
-    opacity: 1;
-    
-} 
 
-#newid {
-    background-color: aqua;
-}
+
 
 @keyframes jumpFade {
     0% {
@@ -237,3 +222,60 @@ body {
         opacity: 0;
     }
 }
+
+
+
+.initial {
+    background-color: aqua;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+}
+
+.changed {
+    background-color: red;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+}
+
+
+#btnbtn {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+/* 
+#cheerIMG {
+    
+}
+
+#cheerIMG:active {
+    opacity: 1;
+
+} */
+
+/*what it is changed into*/
+.cheerIMG {
+    padding-top: 400px;
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+
+    animation-name: jumpFade;
+    animation-duration: 1s;
+}
+
+
+.cheerIMGo {
+    padding-top: 400px;
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
+}
+

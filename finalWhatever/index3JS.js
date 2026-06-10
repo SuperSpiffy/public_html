@@ -37,7 +37,6 @@ function update() {
 };
 
 function increase() {
-    cheeringImg_onclick();
     counter++;
     update();
 };
@@ -45,25 +44,50 @@ function increase() {
 function decrease() {
     counter--;
     update();
-    cheeringImg_onclick();
 }
 //BUTTON COUNTER CLOSE
 
 
 
-//cheer for me pls
+//stupid ass cheer stuff
 
-let cheerImg = document.getElementById("cheerIMG").style;
-
-cheerImg.zIndex = -1;
-cheerImg.opacity = 0;
+let cheerImg = document.getElementById("cheerIMGo").style;
+cheerImg.zIndex = 1;
 
 
+//this is what needs to be worked on, please vvvv
+//first button
+let cheerBtn = document.getElementById("cheerbtn");
+let divChange = document.getElementById("cheerIMGo");
 
-
-
-//imsotired help lmao
-function cheeringImg_onclick() {
-    
-
+function remove() {
+    divChange.classList.remove('cheerIMG');
+    divChange.classList.add('cheerIMGo');
 }
+
+cheerBtn.addEventListener('click', function () {
+    divChange.classList.remove('cheerIMGo');
+    divChange.classList.add('cheerIMG');
+
+    setTimeout(remove, 900);
+});
+//first button close
+
+
+//second button open
+let cheerBtn2 = document.getElementById("cheerbtn2");
+let divChange2 = document.getElementById("cheerIMGo");
+
+function remove2() {
+    divChange.classList.remove('cheerIMG');
+    divChange2.classList.add('cheerIMGo');
+}
+
+cheerBtn2.addEventListener('click', function () {
+    divChange2.classList.remove('cheerIMGo');
+    divChange2.classList.add('cheerIMG');
+
+    setTimeout(remove2, 900);
+});
+
+
