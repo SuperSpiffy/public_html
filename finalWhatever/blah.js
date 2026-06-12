@@ -31,45 +31,31 @@ function theUltimateLoadFunction(link) {
 /////////////Index2//////////
 
 
-/*
-function tabRev() {
-    let tab = document.getElementsByClassName("tab");//button itself
-    const container = document.getElementById("containerDiv"); //what we want to close?
-    let position = 0;
+// //literally from W3 schools idk bro
+// function tabRev() {
+//     const tab = document.getElementById("tab");//button itself
+//     let container = document.getElementById("containerDiv").style; //what we want to close?
 
-    id = setInterval(frameElement, 5);
+//     //this does NOT work learn why please
+//     let count = 0;
+//     let inc_Count = ++count;
 
-    function frame() {
-        if (position)
-    }
+//     function listen() {
+//         tab.addEventListener("click", function(){
+//             count = inc_Count;
+//         });
+//     };
 
+//     console.log(count);
 
+// };
 
-};
-*/
+let danceBtn = document.getElementById('changeBtn');
 
-//literally from W3 schools idk bro
-function tabRev() {
-    const tab = document.getElementById("tab");//button itself
-    let container = document.getElementById("containerDiv").style; //what we want to close?
+let dance_change = document.getElementById('img');
 
-    //this does NOT work learn why please
-    let count = 0;
-    let inc_Count = ++count;
+danceBtn.addEventListener('click', function () {
+    dance_change.classList.add('mainImg1_anim_change');
+    dance_change.classList.remove('mainImg1_anim');
+});
 
-    function listen() {
-        tab.addEventListener("click", function(){
-            count = inc_Count;
-        });
-    };
-
-    
-
-
-
-    console.log(count);
-
-
-    
-
-};

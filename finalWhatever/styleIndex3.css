@@ -2,7 +2,6 @@
 
 body {
     background-color: beige;
-    margin: auto;
 }
 
 
@@ -12,26 +11,15 @@ body {
     justify-content: center;
     align-content: center;
 
-
-
     width: 75px;
     height: px;
     background-color: rgb(182, 182, 182);
 }
 
 #bodyDiv {
-    padding: 5px;
-    /* border-color: rgb(182, 158, 128);
-    border-width: 5px;
-    border-style: solid; */
-
-
     margin: auto;
     width: 75%;
     height: 1000px;
-
-
-
 }
 
 #h1 {
@@ -45,8 +33,6 @@ body {
 
     width: 100%;
     height: 100%;
-
-
 }
 
 .header {
@@ -222,39 +208,6 @@ body {
         opacity: 0;
     }
 }
-
-
-
-.initial {
-    background-color: aqua;
-    position: absolute;
-    width: 200px;
-    height: 100px;
-}
-
-.changed {
-    background-color: red;
-    position: absolute;
-    width: 200px;
-    height: 100px;
-}
-
-
-#btnbtn {
-    position: relative;
-    width: 100px;
-    height: 100px;
-}
-
-/* 
-#cheerIMG {
-    
-}
-
-#cheerIMG:active {
-    opacity: 1;
-
-} */
 
 /*what it is changed into*/
 .cheerIMG {
